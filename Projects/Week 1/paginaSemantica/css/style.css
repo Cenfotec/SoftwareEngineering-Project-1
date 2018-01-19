@@ -1,0 +1,37 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Inicio: Estilos del Header */
+
+header {
+  background-color: #000;
+  color: #FFF;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+header div {
+  width: 250px;
+  float: left;
+}
+
+header nav {
+  width: 500px;
+  float: right;
+}
+
+header nav a {
+  color: #FFF;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+/* Fin: Estilos del Header */
+
+
+/* Estilos Generales */
+
+.clearFix {
+  display: flow-root;
+}

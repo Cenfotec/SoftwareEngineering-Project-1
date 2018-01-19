@@ -1,0 +1,52 @@
+Los elementos se dividen segun su formato visual en 2 tipos:
+
+    Inline:
+      - Se acomodan uno a la par del otro.
+      - Su ancho es definido por el contenido.
+      - <span>, <a>, <img>
+
+    Block:
+      - Se acoodan uno abajo del otro.
+      - Ocupan el 100% del ancho.
+      - <h1>...<h6>, <header>, <p>, <nav>, <div>, <footer>, <main>
+
+
+
+Teoria de Selectores:
+
+  Selectores:
+
+    Elemento:
+      - body { }, span { }
+
+    Descendiente:
+      - header nav a { }
+
+    ID:
+      - Permite seleccionar un elemento por medio de su atributo ID.
+      - Dentro del HTML no pueden haber IDs repetidos.
+      - [HTML] '<p id="parrafoPrincipal"> </p>'
+      - [CSS] '#parrafoPrincipal { }'
+
+    Class:
+      - Permite asociarle un comportamiento visual a todos los elementos
+	que incrementen dicha clase.
+      - [HTML] '<p class="importante'> ... </p>
+      - [HTML] '<p class="importante'> ... ... </p>
+      - [CSS] '.importante { }'
+
+
+
+Modelo de Cajas:
+  
+ +---+
+ |   |-> border		
+ +---+
+
+ +-----+
+ |  <->| padding
+ +-----+
+
+ +---+     +---+
+ |   | <-> |   | margin		
+ +---+     +---+
