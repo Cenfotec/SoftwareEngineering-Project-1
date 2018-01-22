@@ -6,7 +6,7 @@ Los elementos se dividen segun su formato visual en 2 tipos:
       - <span>, <a>, <img>
 
     Block:
-      - Se acoodan uno abajo del otro.
+      - Se acomodan uno abajo del otro.
       - Ocupan el 100% del ancho.
       - <h1>...<h6>, <header>, <p>, <nav>, <div>, <footer>, <main>
 
