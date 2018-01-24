@@ -11,9 +11,9 @@ Metodologia:-------+ -> "El proceso de desarrollo se vuelve mas eficiente"
 Espicificacion de Requerimientos de Software: -> Documento
     - Lista de requerimentos
 
-En los 90' se dan cuenta que la lista de requerimientos no deberian | -> Tecnologias/Metodologias Tradicionales
-estar "tallados en pierda".                                         |
-    - Hoy en dia los requerimientos son muy dinamicos. | -> Tecnologias/Metodologias Agiles
+En los años 90' se dan cuenta que la lista de requerimientos no deberian | -> Tecnologias/Metodologias Tradicionales
+estar "tallados en pierda".                                         	 |
+    - Hoy en dia los requerimientos son muy dinamicos.                   | -> Tecnologias/Metodologias Agiles
 
 
 
@@ -23,7 +23,7 @@ IBM Metodologia:
     - Rational Unified Process (RUT)
         - Rational Rose -> Software (UML -> Unified Modeling Language)
             - Diagramas de Actividad y Casos de Uso.
-            - UML: Para hacer analisis y diseño con orientacion a objetos.
+            - UML: Para hacer analisis y diseños con orientacion a objetos.
 
 Metodologias Agiles:
     - Historia de Usario.
@@ -39,7 +39,7 @@ Trabajo en Grupo:
         - Soporte (Configuracion)
             - Control de respaldos y versiones. (v1.0, v2.0...)
         - Calidad:
-            - Coordinas pruebas de la aplicacion.
+            - Coordinar las pruebas de la aplicacion.
             - Control de calidad del documento.
         - Desarrollo
             - Coordinar y revisar los estandares.
