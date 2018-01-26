@@ -30,7 +30,7 @@ Teoria de Selectores:
 
     Class:
       - Permite asociarle un comportamiento visual a todos los elementos
-	que incrementen dicha clase.
+		que contengan dicha clase.
       - [HTML] '<p class="importante'> ... </p>
       - [HTML] '<p class="importante'> ... ... </p>
       - [CSS] '.importante { }'
