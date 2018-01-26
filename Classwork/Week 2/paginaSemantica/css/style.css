@@ -1,0 +1,111 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* Inicio: Estilos del Header */
+
+header {
+  background-color: #000;
+  color: #FFF;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+header div {
+  width: 250px;
+  float: left;
+}
+
+header nav {
+  width: 500px;
+  float: right;
+}
+
+header nav a {
+  color: #FFF;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+/* Fin: Estilos del Header */
+
+
+
+/* Inicio: estilos del main */
+
+#bannerPrincipal {
+  min-height: 300px;
+  background-image: url("../img/espacio.jpg");
+  position: relative;
+}
+
+#bannerPrincipal h1 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 36px;
+  /* Inicio: centrar elemento absoluto */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  /* Fin: centrar elemento absoluto */
+}
+
+
+
+/* Inicio: estilos formulario de contacto*/
+
+#contacto {
+  padding: 15px;
+}
+
+#contacto form {
+  width: 30%;
+}
+
+#contacto form h2 {
+  font-size: 28px;
+  margin: 0 auto;
+  width: 180px;
+  margin-bottom: 10px;
+}
+
+#contacto form div {
+  margin-bottom: 10px;
+}
+
+#contacto form div label {
+  width: 100px;
+  display: inline-block;
+}
+
+#contacto form div input {
+  height: 30px;
+  width: 200px;
+}
+
+#contacto form button {
+  width: 150px;
+  height: 30px;
+  color: #FFF;
+  background-color: #6F1E51;
+  font-size: 16px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+
+#contacto button:hover {
+  background-color: #833471;
+}
+
+/* Fin: estilos formulario de contacto */
+
+
+
+/* Estilos Generales */
+
+.clearFix {
+  display: flow-root;
+}
