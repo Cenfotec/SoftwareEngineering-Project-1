@@ -1,0 +1,30 @@
++---------------------------------------------+
+| Roles de Proyecto de Ingenieria de Software |
++---------------------------------------------+
+
+Cada integrante debe llevar su propia vitacora.
+
+Coordinador: [ADMIN]
+    - Verificar que cada uno cumpla con su rol.
+    - Realizar propuestas de division de agendas.
+    - Enviar la agenda de reunion y verificar la confeccion minuta. 
+    - Minuta: Documento donde queda estipulado la division de trabajo y las fechas de entre de entrega las mismas.
+    - Tecnica de Minuta. (lo decide el grupo)
+    - Minuta: Unico documento oficial obligatorio.
+
+Planeacion: [ADMIN]
+    - Verificar las fechas de entrega y la realizacion del trabajo.
+
+Desarrollo:
+    - Revisa los estandares del proyecto y de cada desarrollador.
+    - Hacer el "Inventario Tecnico" (3 veces)
+
+Calidad: [2 personas]
+    - Revisar los documentos.
+    - Coordinacion de las pruebas.
+
+- Configuracion/Soporte:
+    - Respaldos de los documentos.
+    - Respaldo del codigo.
+    - Respaldo del producto, donde el producto es la sumatoria de todas las versiones.
+    - Herramientas.
