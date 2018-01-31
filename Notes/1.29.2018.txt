@@ -2,7 +2,7 @@
 | Roles de Proyecto de Ingenieria de Software |
 +---------------------------------------------+
 
-Cada integrante debe llevar su propia vitacora.
+Cada integrante debe llevar su propia bitacora.
 
 Coordinador: [ADMIN]
     - Verificar que cada uno cumpla con su rol.
