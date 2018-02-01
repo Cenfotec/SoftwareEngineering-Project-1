@@ -1,0 +1,13 @@
++----------------+
+| Requerimientos |
++----------------+
+
+El grupo de funcionalidades que debe tener una aplicacion.
+    - Funcionalidad:
+        - Requerimientos funcionales. (lo que se programa)
+    - Operacion Calidad:
+        - Requerimientos no funcionales.
+            - Hardware
+            - Software
+            - Software para desarrollo
+            - Estandar grafico                  
