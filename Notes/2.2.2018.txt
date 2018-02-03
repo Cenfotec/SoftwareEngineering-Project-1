@@ -1,0 +1,37 @@
++-------------+
+| Java Script +-> Motor ECMAScript6 (version actual)
++-------------+
+
+Variable: 
+    - Un espacio que se reserva en memoria. (declaracion de la variable)
+    - Se le puede asignar un tipo de dato.
+    - 'let' sNombre
+    - 'const' nPi
+    - 'var'
+    - Inicializacion de las variables [sNombre = 'Pablo']
+
+
+
++----------------------+
+| Interfaz (HTML, CSS) |
++----------------------+
+      |           ^
+      |           |
+      |           |
+      |		  |							
+      v           |
++----------------------+
+|    Controlador.js    +-> Responsabilidades:
++----------------------+       - Leer los datos de la interfaz.
+      |           ^            - Imprime los datos en la interfaz.
+      |           |            - Responder a eventos.
+      |           |            - Validacion de formularios.
+      |		  |            - Creacion dinamica de CSS.							
+      v           |
++----------------------+
+|      Servicio.js     +-> Responsabilidades:
++----------------------+       - Recibir datos.
+			       - Retornar datos.
+       		               - Procesar datos.
+                               - Almacenamieto temporal.
+                               - Comunicarse con el backend.
