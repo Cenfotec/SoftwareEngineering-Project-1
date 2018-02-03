@@ -1,0 +1,212 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* Inicio: Estilos del Header */
+
+header {
+  background-color: #000;
+  color: #FFF;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+header div {
+  width: 250px;
+  float: left;
+}
+
+header nav {
+  width: 500px;
+  float: right;
+}
+
+header nav a {
+  color: #FFF;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+/* Fin: Estilos del Header */
+
+
+
+/* Inicio: estilos del main */
+
+#bannerPrincipal {
+  min-height: 300px;
+  background-image: url("../img/espacio.jpg");
+  position: relative;
+}
+
+#bannerPrincipal h1 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 36px;
+  /* Inicio: centrar elemento absoluto */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  /* Fin: centrar elemento absoluto */
+}
+
+
+
+/* Inicio: estilos formulario de contacto */
+
+#contacto {
+  padding: 15px;
+}
+
+#contacto form {
+  width: 30%;
+  float: left;
+}
+
+#contacto form h2 {
+  font-size: 28px;
+  margin: 0 auto;
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+#contacto form p {
+  margin-bottom: 20px;
+  line-height: 25px;
+  text-align: justify;
+}
+
+#contacto form div {
+  margin-bottom: 20px;
+}
+
+#contacto form div label {
+  width: 100px;
+  display: inline-block;
+}
+
+#contacto form div input {
+  height: 30px;
+  width: 200px;
+  outline-color: #6F1E51;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+#contacto form div input::-webkit-input-placeholder {
+  color: rgba(111, 30, 81, 0.7);
+}
+
+#contacto form button {
+  width: 150px;
+  height: 30px;
+  color: #FFF;
+  background-color: #6F1E51;
+  font-size: 16px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  outline: none;
+}
+
+#contacto button:hover {
+  background-color: #833471;
+  cursor: pointer;
+}
+
+#contacto .mapa {
+  width: 65%;
+  float: right;
+}
+
+/* Fin: estilos formulario de contacto */
+
+
+
+/* Inicio: estilos formulario de contacto */
+
+/*
+Verde: #4CAF50
+Naranja: #FF9800
+Amarillo: #FFEB3B
+Café: #8D6E63
+*/
+
+#metales {
+  height: 550px;
+  position: relative;
+  background-color: #E2E1E0;
+}
+
+#metales-container {
+  position: absolute;
+  margin: 65px 20%;
+  background-color: #FFF;
+  /* Material Design Box Shadows */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+#metales-container:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#metales-container p {
+  font-size: 8px;
+  position: absolute;
+  transform: translateX(-50%), translateY(-50%);
+  top: 45px;
+  right: 2px;
+}
+
+.elemento-verde {
+  background-color: #4CAF50;
+}
+
+.elemento-naranja {
+  background-color: #FF9800;
+}
+
+.elemento-amarillo {
+  background-color: #FFEB3B;
+}
+
+.elemento-cafe {
+  background-color: #8D6E63;
+}
+
+.elemento {
+  color: #171820;
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+  margin: 5px;
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
+}
+
+.elemento:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+.elemento-columna {
+  display: table;
+}
+
+.elemento-columna:not(:last-child) {
+  float: left;
+}
+
+
+/* Fin: estilos formulario de contacto */
+
+
+/* Estilos Generales */
+
+.clearFix {
+  display: flow-root;
+}
