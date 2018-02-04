@@ -18,7 +18,7 @@ Variable:
       |           ^
       |           |
       |           |
-      |		  |							
+      |		 	  |							
       v           |
 +----------------------+
 |    Controlador.js    +-> Responsabilidades:
@@ -26,12 +26,12 @@ Variable:
       |           ^            - Imprime los datos en la interfaz.
       |           |            - Responder a eventos.
       |           |            - Validacion de formularios.
-      |		  |            - Creacion dinamica de CSS.							
+      |		  	  |            - Creacion dinamica de CSS.							
       v           |
 +----------------------+
 |      Servicio.js     +-> Responsabilidades:
 +----------------------+       - Recibir datos.
-			       - Retornar datos.
-       		               - Procesar datos.
+							   - Retornar datos.
+       		                   - Procesar datos.
                                - Almacenamieto temporal.
                                - Comunicarse con el backend.

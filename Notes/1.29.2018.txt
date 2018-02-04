@@ -17,7 +17,7 @@ Planeacion: [ADMIN]
 
 Desarrollo:
     - Revisa los estandares del proyecto y de cada desarrollador.
-    - Hacer el "Inventario Tecnico" (3 veces)
+    - Hacer el "Inventario Tecnico". (3 veces)
 
 Calidad: [2 personas]
     - Revisar los documentos.
