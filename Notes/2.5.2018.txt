@@ -1,0 +1,92 @@
++------------+
+| ¿Proyecto? +->
++------------+----+
+|                 |
++-> Principio     +-> Fin
++--------+--------+
+         |
+         v
+      Temporal:
+          - Todo proyecto tiene que terminar.
+
+
+
+Proyecto:
+    - Genera un producto o servicio.
+        - Consultoria, producto nuevo, mejora, version nueva, bases de datos, 
+          cableado o incorporacion de una red en una organizacion, etc.
+    - Tiene un objetivo.
+    - Alcance:                                                           <------+
+        - Todas aquellas caracteristicas que forman parte del producto y        | 
+          que si esas caracteristicas se cumplen, el proyecto se termina.       |
+        - Datos:                                                                |
+            - Ciertos:                                                          |
+                - Son hechos.                                                   |
+            - Supuestos:                                                        |
+                - Asumir que los laboratorios siempre van a tener equipo.       |
+                - Son necesarios                                                |
+        - Priorizacion:                                                         |
+            - Permite la negociacion.                                           |
+    - Tiempo:                                                            <------+-> Tiempo, Costo, Alcance    
+        - Dado. (Tradicionalmente se asigna el tiempo)                          |    [TRIPLE RESTRICCION]
+        - Suma del tiempo activo.                                               |        - Todas son restriccion del proyecto.
+        - No exista.                                                            |        - Interaccion entre estos.
+    - Costo:                                                                    |        - 6 meses -> alcance "x", cobrado a "x".
+        - Dado.                                                                 |
+        - Ofertado.                                                             |
+        - Negociado.                                                     <------+             
+
+
+
+Organizacion:
+    - Mision:
+        - De que manera se va a llegar a esa vision.
+    - Vision
+        - Donde queremos estar a largo plazo.
+    - Objetivos: (concordancia)
+        - Implementacion practica.
+        - Tradicional:
+            - Departamentos:
+                - Jerarquia:
+                    - Cada persona va a tener solamente un jefe.
+                    - A veces hay 2 jefes para una persona, y es un problema.
+                    - Se puede unir personas de diferentes departamentos para trabajar en un proyecto. (1 Encargado)
+        - Matricial:
+            - Tabla:
+                +-------+--------+--------+
+                | Proy1 |  Proy2 |  Proy3 |
+                +-------+--------+--------+
+                |   R1  |   R5   |   R6   |
+                +-------+--------+--------+
+                |   R2  |   R6   |   R1   |
+                +-------+--------+--------+
+                |   R3  |   R7   |   R2   |
+                +-------+--------+--------+
+                |   R4  |   R8   |   R5   |
+                +-------+--------+--------+
+                - Se van moviendo a diferentes proyectos al final un proyecto.
+                - Solo 1 jefe en un momento dado, nunca van haber 2 jefes para una persona
+
+
+
+Producto:
+    - Alcance -> definen -> Caracteristicas -> son los -> Requerimientos.
+    - Requerimientos:
+        - Caracteristicas que van a hacer algo.
+        - Caracteristicas que van a permitir hacer algo. (E.g. Pagar a traves de la pagina de Amazon utilizando tarjeta vinculada a un banco)
+        - Tienen que ser sumamente claros.
+            - Requerimientos no funcionales:                             <------+
+                - Interfaz Grafica, Navegadores.                                |
+                - Colores, Tipo de Letra, etc.                                  |
+            - Requerimientos funcionales:                                       +-> Requerimientos del sistema:
+                - Calculos.                                                     |       - "El sistema debera permitir" + verbo infinitivo -> ar, er, ir
+                - Funciones.                                                    |       - Conciso o Atomicos
+                - Automatizar Procesos.                                  <------+
+
+
+
+Modulos:
+    - Seguridad.
+    - Reporte.
+    - Principal/Core.
+    - Configuracion
