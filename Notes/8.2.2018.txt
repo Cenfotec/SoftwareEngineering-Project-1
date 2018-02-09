@@ -1,0 +1,94 @@
++---------------+
+| Ficha Tecnica |
++---------------+
+
+- Equipos de trabajo:
+    - Nivel de madurez.
+    - Teoria de sistemas.
+    - Razones:                                       --+
+        - Mejorar el trabajo individual. (sinergia)    +-> Para que funcione, se necesita un "Reglamento"
+    - Caos (Entropia)                                --+
+    - Mejorar:
+        - Control del tiempo.
+        - Comunicacion.
+        - Respeto.
+        - Normas minimas.
+    [SANCION Y RECOMPENSA] -> El humano trabaja asi
+    - Vision.
+    - Mision.
+    - Valores.
+    - [REGLAMENTO]
+    - Sanciones:
+        - Cuando se sale del grupo.
+        - Cuando no cumple con los objetivos.
+ 
+    +-------------+-------------+
+    |  Magnitud   | Importancia |
+    |     [+]     |     [+]     |
+    |     [-]     |     [-]     |
+    +-------------+-------------+
+
+    - Sanciones mas graves:
+        - Faltar el respecto.
+        - Llegar tarde.
+        - Ausencia a la presentacion.
+        - Entregas tardias programacion. (misma sancion)
+        - Entregas tardias documentos.
+    - Minuta:
+        - Cambiar o quitar cartas.
+        - Llegadas a las tardias.
+
+
+
+- Just In Time:
+    - Quien es el cliente?
+    - "Mi cliente es el que depende inmediatamente de mi trabajo"
+
+
+
+Requerimientos:
+    - Capacidad o caracteristica que debe cumplir un sistema especifico.
+    - Se detallan en Especificacion de Requerimientos de Software (ERS):
+        - Es un acuerdo entre el cliente y el grupo de desarrolladores y se puede modificar.
+        - Si los requerimientos cambian a menudo, el producto es cambiado frecuentemente.
+            - Inestabilidad.
+            - Atraso.
+            - Malestar en los programadores.
+    - No Funcionales [LISTA]:
+        - Elementos de calidado o elementos que permiten la ejecucion de los requerimientos funcionales.
+    - Funcionales [LISTA]:
+        - Lo que el sistema debe hacer en terminos de interaccion con el usuario.
+    - "El sistema debera..." verbo infinitivo.
+    - "El sistema permitira al usuario..." + verbo infinitivo (hacer).
+    - Completo.
+    - Correcto.
+    - Factible de hacer. (El cliente debe ser quien pague las licencias de librerias, etc... utilizadas)
+    - Necesario.
+    - Priorizados.
+    - No ambiguo. (el sistema tiene que ser eficiente, usable, etc... [ES AMBIGUO])
+    - Verificable.
+    - Identificable.
+
+    +----------------------------------------------+
+    |       ReqFun01                               |
+    |             02 -> ReqFun03                   | 
+    | [NO APLICA] 03 -> caso de uso #7 -> ReqFun04 |
+    |             04                               |
+    +----------------------------------------------+
+
+Desarrollo de Software:
+    - Que? [INICICION Y ANALISIS] -> Informe preliminar y documento de requerimientos
+        - Tratar de entender los que el cliente nos dice con la menor duda posible.
+    - Como? [DISEÑO Y CONSTRUCCION]
+        - Como lo tengo que hacer.
+        - Determinar graficamente a nivel de arquitectura y a nivel de pruebe
+          como hacer cada cosa cumpliendo con cada una de las fucionalidades de los requerimientos.
+    - Verificado? [PRUEBAS]
+        - Ver si el software cumple con los requerimientos o no.
+    - Iniciacion > Analisis > Diseño > Construccion > Verificacion
+         ERS           +- DADS -+         CODIGO        PRUEBAS
+
+
+		 
+- Informe Preliminar
+- Prototipo
