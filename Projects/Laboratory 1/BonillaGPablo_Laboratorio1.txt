@@ -1,0 +1,128 @@
+Pablo Bonilla G.
+Proyecto de Ingeniería del Software 1
+Laboratorio #1
+
+
+Objetivo Principal: 
+Crear una aplicación que sea capaz de registrar órdenes de los clientes para el restaurante El Candelabro. El sistema será capaz de llevar a cabo una serie de procesos por los cuales serán dirigidos por las diferentes personas que conforman la lista de roles del sistema. Los procesos incluyen: registro de mesa y orden, boleta impresa con el pedido específico del cliente, información detallada acerca del pedido, facturación final utilizando diferentes métodos de pago, sistema de acceso por parte de los usuarios y comprobación de ingresos.
+
+
+Descripción: 
+» Reportes: 
+El sistema deberá incluir reportes específicamente de los platillos y bebidas a preparar con sus horas de ingreso, hora de preparación y de servicio respectivamente. Estos son enviados directamente al cocinero o a el cantinero cuando el mesero introduce una nueva orden.
+También se encargará de reportar como parte final de la cuenta: la fecha, la hora, el nombre del cliente, los platillos y bebidas que consumió el cliente, el subtotal, los impuestos de ventas y servicios y finalmente el total por pagar.
+
+
+» Configuración: 
+El sistema debe tener la opción de que el administrador pueda crear nuevos usuarios. Cada usuario se le asigna una identificación, nombre, rol (Anfitrión, Mesero, Cocinero, Cantinero o Cajero); al igual que poder solicitarlos por identificación, nombre o usuario.
+El cocinero debe tener el permiso para poder añadir datos de un producto, como seria el código, la descripción, el precio y el tipo (bebida o platillo); al igual que poder solicitarlos por código, descripción o tipo.
+El cajero tiene la necesidad de tener acceso a la facturación, como es el caso de crear la cuenta final, la cual deberá incluir la fecha, la hora, el nombre del cliente, los platillos y bebidas previamente seleccionados por el cliente, el subtotal, impuestos de ventas y de servicio, y finalmente el total de plata por pagar. Dependiendo del método de pago, se deberá indicar el vuelto (en efectivo) o indicar el número de tarjeta de crédito o débito y el número de confirmación.
+El administrador deberá ser el responsable de asignar los permisos para cada rol respectivamente.
+
+» Módulo principal: 
+La aplicación necesitará varios datos para que se pueda realizar todo el proceso. El primer dato es el número de mesa para que se pueda crear la cuenta respectiva.
+Posteriormente el mesero le solicita la orden, producto por producto, para luego seleccionar la mesa y enviarla al cocinero o/y el cantinero.
+Después el cocinero y/o el cantinero indican si ya las ordenes fueron preparadas y a la hora en la cual estuvieron listas.
+En la cuenta final del cliente, el sistema deberá especificar la fecha y hora del día, nombre del cliente, los platillos y bebidas, el subtotal, el impuesto de ventas y servicio y por último el total por pagar.
+Se necesita saber que tipo de pago va a seleccionar el cliente, o en efectivo o tarjeta de crédito o débito.
+Finalmente, el cajero requerirá del total de plata recolectado en el día para poder abrir la caja y sumarlo más el total de cuentas pagadas. Esto va a especificar la cantidad de dinero que debe de tener la caja en efectivo y vouchers.
+Para que cualquier de la siguiente lista de roles pueda realizar una función en el sistema… Anfitrión, Mesero, Cocinero, Cantinero y Cajero, deberá acceder por medio del nombre de usuario y contraseña.
+
+
+» Seguridad: 
+El sistema deberá contar con seguridad para que los usuarios no tengan permiso a cualquier tipo de información sensible y cada usuario debe de contar con un nombre de usuario y contraseña para poder accesar e identificarse.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Requerimientos Funcionales: 
+1: El sistema deberá determinar cuales mesas están habilitadas.
+
+2: El sistema permitirá que el usuario abrir una cuenta en la mesa indicada.
+
+3: El sistema permitirá al mesero, una vez seleccionada la mesa, poder
+ introducir la orden señalada por el cliente y la cantidad de cada producto.
+
+4: El sistema deberá ser capaz que el producto ingresado exista en el sistema.
+
+5: El sistema deberá imprimir una boleta con los platillos a preparar directamente al cocinero desde el sistema, mientras que deberá también imprimir una boleta con las bebidas en la barra.
+
+6: El sistema permitirá al cocinero y el cantinero indicarle cuando una orden ha sido preparada exitosamente.
+
+7: El sistema permitirá al mesero, que cuando la orden haya sido proporcionada al cliente, que lo pueda marcar como entregada.
+
+8: El sistema deberá guardar automáticamente la hora de ingreso de la orden por parte del cliente, la hora de preparación por el cocinero y/o el cantinero y finalmente la hora en que la orden fue exitosamente entregada al cliente.
+
+9: El sistema permitirá al mesero añadir cuantas órdenes se necesiten agregar, así lo  indique el cliente.
+
+10: El sistema permitirá al cocinero y/o el cantinero recibir nuevas boletas con órdenes, independientemente de cuantas mesas están ocupadas y en qué tiempo se hayan solicitado.
+
+11: El sistema permitirá al mesero indicar cuando el cliente desee la cuenta, así solicitándolo a través del sistema al cajero.
+
+12: El sistema deberá preparar la cuenta, donde tendrá que mostrar la fecha y hora de ese día, el nombre del cliente, los platillos y bebidas que ordenó, el subtotal, el impuesto de ventas y servicio y finalmente el total por pagar.
+
+13: El sistema permitirá al cajero indicar cual método de pago se utilizará, en efectivo o con tarjeta de crédito o débito.
+
+14: El sistema deberá mostrar el monto a pagar correspondiente a la cuenta e indicar el vuelto en caso de que el pago sea en efectivo.
+
+15: El sistema permitirá al cajero ingresar el número de tarjeta y el número de confirmación de la tarjeta correspondiente (crédito o débito) en caso de que el pago sea con tarjeta.
+
+16: El sistema permitirá al mesero consultar las órdenes que están pendientes por atender.
+
+17: El sistema permitirá al cocinero o el cantinero consultar las órdenes que estén pendientes por atender.
+
+18: El sistema deberá mostrar la suma total del dinero agregado ese día, más el total de cuentas pagadas.
+
+19: El sistema deberá mostrar por último, la cantidad de dinero que debe tener la caja en efectivo y en vouchers.
+
+20: El sistema deberá tener un total de 5 roles: Anfitrión, Mesero, Cocinero, Cantinero y Cajero.
+
+21: El sistema permitirá al administrador añadir y remover permisos específicos de cada rol.
+
+22: El sistema deberá desplegar un formulario de ingreso o acceso cuando cualquier usuario perteneciente a los roles intente realizar cualquier función.
+
+23: El sistema permitirá a cualquier usuario perteneciente a cualquier rol listado, poder acceder por medio de un nombre de usuario y contraseña instaurado por el administrador.
+
+24: El sistema deberá poder almacenar la información de cada usuario, como es la  identificación, el nombre, el rol, nombre de usuario y contraseña, que va a ser manejado por el administrador directamente.
+
+25: El sistema permitirá al cocinero añadir o modificar un producto.
+
+26: El sistema deberá tener un listado con los productos, identificando cada uno con: un código, una descripción, el precio y el tipo (bebida o platillo).
+
+27: El sistema deberá realizar la consulta de los productos utilizando el código, la descripción o el tipo de producto.
+
+28: El sistema permitirá al mesero deshabilitar una mesa cuando el proceso de pago haya sido efectuado.
+
+
+
+Requerimientos No Funcionales: 
+1: La carga de datos y procesamiento de funciones debe tardar menos de 5 segundos.
+
+2: El software deberá mostrar un diálogo informativo si se presenta un error en el programa.
+
+3: La aplicación será desarrollada específicamente solo para PC.
+
+4: El programa deberá contar con una interfaz gráfica sencilla utilizando colores planos.
+
+5: El tipo de letra utilizada en toda la aplicación será la llamada “Roboto”.
+
+6: La aplicación solamente manejara y soportara el idioma español.
+
+7: Cada 12 horas la totalidad del sistema y datos deberá ser respaldada en un servidor  aparte con acceso restringido.
+
+8: El programa deberá incluir un manual completo de todas las funcionalidades especificando detalladamente su función y como ejecutarlo.
+
+9: Las cuentas de los usuarios deberán estar bajo la técnica/algoritmo de encriptación denominada “AES”
+
+10: El software estará bajo la licencia GNU General Public License v3.0 y será abierto.
