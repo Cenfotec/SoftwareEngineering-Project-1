@@ -1,0 +1,13 @@
+1. Axure
+2. Investigar y desarrollar un wireframe para la pagina de inicio de Correos de Costa Rica.
+3. El contenido debe ser real.
+4. Subir PDF con formato pbonillaWireframe.pdf
+
+
+
+- Analizar sitios web similares
+- 3 Aspectos de mejora usabilidad
+- 3 Aspectos de mejora a nivel de estructura (diseño)
+- 3 Aspectos de mejora a nivel de contenido
+- 3 Aspectos positivos
+(pantallazos y justificacion de cada uno)
