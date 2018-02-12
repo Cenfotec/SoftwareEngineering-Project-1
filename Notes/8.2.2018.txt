@@ -41,8 +41,8 @@
 
 
 - Just In Time:
-    - Quien es el cliente?
-    - "Mi cliente es el que depende inmediatamente de mi trabajo"
+    - Quien es el cliente?.
+    - "Mi cliente es el que depende inmediatamente de mi trabajo".
 
 
 
@@ -81,7 +81,7 @@ Desarrollo de Software:
         - Tratar de entender los que el cliente nos dice con la menor duda posible.
     - Como? [DISEÑO Y CONSTRUCCION]
         - Como lo tengo que hacer.
-        - Determinar graficamente a nivel de arquitectura y a nivel de pruebe
+        - Determinar graficamente a nivel de arquitectura y a nivel de prueba.
           como hacer cada cosa cumpliendo con cada una de las fucionalidades de los requerimientos.
     - Verificado? [PRUEBAS]
         - Ver si el software cumple con los requerimientos o no.
