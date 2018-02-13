@@ -11,4 +11,7 @@ function addElement() {
 
   let sSimbolo = document.querySelector('#txtSimbolo').value;
   console.log(sSimbolo);
+
+  let infoElementos = [sElementoQuimico, iPesoAtomico, sSimbolo]
+  console.log(infoElementos);
 }
