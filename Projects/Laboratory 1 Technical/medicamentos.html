@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Medicamentos</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+
+    <header>
+
+      <nav>
+        <ul>
+          <li>
+            <a class="active-menu" href="medicamentos.html">MEDICAMENTOS</a>
+            <a href="articulos.html">ARTICULOS COMUNES</a>
+            <a id="inicio" href="index.html">INICIO</a>
+            <a href="usuarios.html">USUARIOS</a>
+            <a href="formas_pago.html">FORMAS DE PAGO</a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+
+
+
+
+
+
+
+    <main>
+
+      <div class="hPrincipal card-1" id="primerFormulario">
+
+        <h1>Medicamentos</h1>
+
+        <form>
+
+          <label for="txtNombre">Nombre</label>
+          <input type="text" id="txtNombre">
+
+          <label for="txtUsos">Usos</label>
+          <input type="text" id="txtUsos">
+
+          <label for="selectTipoUso">Tipo de Uso</label>
+          <select id="selectTipoUso">
+
+            <option value="Oral">Oral</option>
+            <option value="Topico">Tópico</option>
+            <option value="Intravenoso">Intravenoso</option>
+            <option value="Inyectable">Inyectable</option>
+
+          </select>
+
+          <label for="selectTipoPresentacion">Tipo de Presentación</label>
+          <select id="selectTipoPresentacion">
+
+            <option value="Inyeccion">Inyección</option>
+            <option value="Pastilla">Pastilla</option>
+            <option value="Unguento">Ungüento</option>
+            <option value="Gel">Gel</option>
+            <option value="Polvo">Polvo</option>
+            <option value="Capsula">Cápsula</option>
+            <option value="Jarabe">Jarabe</option>
+
+          </select>
+
+          <label for="numPrecio">Precio</label>
+          <input type="text" id="numPrecio">
+
+          <label for="checkboxReceta">¿Necesita receta médica?</label>
+          <input type="checkbox" id="checkboxReceta">
+
+          <label for="txtCasaFarmaceutica">Casa Farmacéutica</label>
+          <input type="text" class="tipo-checkbox" id="txtCasaFarmaceutica">
+
+          <button type="button" class="button-1" id="btnEnviar-1">Enviar</button>
+
+        </form>
+
+      </div>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+
+    </footer>
+
+    <script src="js/controlador_medicamentos.js"></script>
+  </body>
+</html>
