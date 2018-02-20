@@ -1,0 +1,20 @@
++----------------+
+| Almacenamiento |
++----------------+
+
+Local Storage:
+    - Borrar Local Storage.
+		- localStorage();
+	- Guardar Datos:
+	    - Tipos de datos primitivos:
+		    - Number, boolean, String
+			- let sUsuarioConectado = 'pmonestel';
+			- localStorage.setItem('usuarioConectadoLS', sUsuarioConectado);
+		- Tipos de datos complejos:
+		    - Array, Matrices, Objetos
+			- localStorage.setItem('listaUsuariosLS', JSON.stringify(aInfoUsuarios));
+	- Obtener Datos:
+	    - Tipos de datos Primitivos:
+		    - let usuarioConectado = locaStorage.getItem('usuarioConectadoLS'); 
+		- Tipos de datos complejos:
+		    - let listaUsuarios = JSON.parse(localStorage.getItem('listaUsuariosLS'));
