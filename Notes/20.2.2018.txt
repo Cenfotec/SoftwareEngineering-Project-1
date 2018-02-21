@@ -15,6 +15,6 @@ Local Storage:
 			- localStorage.setItem('listaUsuariosLS', JSON.stringify(aInfoUsuarios));
 	- Obtener Datos:
 	    - Tipos de datos Primitivos:
-		    - let usuarioConectado = locaStorage.getItem('usuarioConectadoLS'); 
+		    - let usuarioConectado = localStorage.getItem('usuarioConectadoLS'); 
 		- Tipos de datos complejos:
 		    - let listaUsuarios = JSON.parse(localStorage.getItem('listaUsuariosLS'));
