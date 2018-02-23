@@ -1,0 +1,60 @@
++--------+
+| Tablas |
++--------+
+
+<table id="tblLibros">
+	<thead>
+	
+	
+	<tr>
+		<th> Nombre </th>
+		<th> Edad </th>
+	</tr>
+	
+	
+	<tbody>
+	
+	</tbody>
+		-> Todos los datos que se deseen mostrar
+	</thead>
+</table>
+
+
+th -> Se usa dentro del thead
+td -> Se usa dentro del tbody
+
+
+		 Columna
+			|
+            v
++--------+------+------+
+| Nombre | Edad | Sexo |-> thead
++--------+------+------+
+| Pedro  |  30  |  M   |
++--------+------+------+
+| Ana    |  40  |  F   |
++--------+------+------+
+| Beto   |  50  |  M   |-> Fila
++--------+------+------+
+
+
+
+
+DOM (Document Object Model):
+
+						Table
+						  |
+				+---------+------------+
+				|					   |			let fila = cuerpoTabla.insertRow(i);
+			  thead					 tbody
+			    |					   |
+				tr			 		  tr
+		  +---+---+---+                |
+		  |   |   |   |        +--------------+      
+		 th   th  th  th	   |	|	 |	  |
+							  td    td   td   td
+							   |    |    |    |		fila.insertCell();
+							 text text text text
+							 
+													document.createTextNode('Harry Potter');
+													celda.appendChild(sTitulo);
