@@ -1,0 +1,84 @@
++--------------+
+| Arquitectura |
++--------------+
+
+Fisica: "Tarros"
+	- 0% Distribuido:
+		- Lo que usted tiene en su computadora. (MongoDB, Apache, CSS, JS)
+		- Parcialmente Distribuida:
+			- Aquella donde se distribuyen las tecnologias en diferentes computadoras.
+		- 100% Distribuida:
+			- Camponente en una computadora diferente. (Base de Datos, Servidor Web, etc...)
+
+Logica: "Programacion"
+	- 1 Capa
+	- Cliente -> Servidor
+		- Servidor: Base de Datos y Logica
+		- Cliente: Formularios (HTML, CSS, etc...)
+	- N' Capas
+	
+	
+	
+Red:
+	- Un conjunto de computados que comparten recursos
+	  y se pueden comunicar entre ellas. (TCP/IP)
+	  
+	  Servidor <-> Cliente
+					  |
+					  +-> Logica
+					  
+		Capa de Presentacion - Capa Logica - Capa de Datos
+		
+		
+		
+		
+Requerimientos:
+	- Opcionales (Asunto del desarrollador)
+	- Deseables
+	- Primarios -> Alta Prioridad
+	- Secundarios -> Mediana Prioridad y Baja Prioridad
+		
+		
+		
+		
+		
++--------------------------------+
+| Esquema Simple de Priorizacion |
++--------------------------------+	
+
++------------+--------------------+----------------+
+|			 |	  Importante	  |	No importante  |
++------------+--------------------+----------------+
+|  Urgente   |   alta prioridad   | baja prioridad |
++------------+--------------------+----------------+
+| No Urgente |	mediana prioridad |	  ignorable	   |
++------------+--------------------+----------------+
+
+
+
+
+
+
+
+
++--------------+
+| Casos de Uso |
++--------------+
+
+UC-<id> <Nombre Descriptivo>
+Version <numero de la version actual>
+Autor(es) <quien (es) lo escribe (n)>
+Fuentes <quien (es) lo solicita (n)>
+Tipo <opcionales deseables primarios secundarios>
+Dependencias REQ X
+Actores Actor asociado
+Descripcion <Breve descripcion de lo que hace en resumen el caso de uso>
+			Siempre debe empezar con la frase "Este caso de uso inicia cuando..."
+
+
+
+
+
+
+
+		
