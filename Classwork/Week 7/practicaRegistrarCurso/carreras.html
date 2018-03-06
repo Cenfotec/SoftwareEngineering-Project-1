@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Carreras</title>
+  </head>
+  <body>
+
+    <header>
+
+      <nav>
+        <a href="cursos.html">Cursos</a>
+        <a href="carreras.html">Carreras</a>
+      </nav>
+
+    </header>
+
+
+
+    <form>
+
+      <div>
+        <label for="txtCodigo">Código</label>
+        <input type="text" id="txtCodigo">
+      </div>
+
+      <div>
+        <label for="txtCarrera">Nombre de la carrera</label>
+        <input type="text" id="txtCarrera">
+      </div>
+
+      <div>
+        <label for="txtFecha">Fecha de creación</label>
+        <input type="date" id="txtFecha">
+      </div>
+
+      <button type="button" id="btnRegistrar">Registrar</button>
+
+    </form>
+
+    <input type="text" id="txtFiltro">
+    <table id="tblCarreras">
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Carrera</th>
+          <th>Fecha de creación</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+
+
+    <script src="js/carreras.servicio.js"></script>
+    <script src="js/carreras.controlador.js"></script>
+  </body>
+</html>
