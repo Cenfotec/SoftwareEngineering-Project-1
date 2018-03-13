@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Carreras</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <header>
+
+      <nav>
+        <a href="cursos.html">Cursos</a>
+        <a href="carreras.html">Carreras</a>
+      </nav>
+
+    </header>
+
+
+
+    <form>
+
+      <div>
+        <label for="txtCodigo">Código</label>
+        <input type="text" id="txtCodigo" required>
+      </div>
+
+      <div>
+        <label for="txtCarrera">Nombre de la carrera</label>
+        <input type="text" id="txtCarrera" required>
+      </div>
+
+      <div>
+        <label for="txtFecha">Fecha de creación</label>
+        <input type="date" id="txtFecha" required>
+      </div>
+
+      <button type="button" id="btnRegistrar">Registrar</button>
+      <button type="button" id="btnActualizar">Actualizar</button>
+
+    </form>
+
+    <input type="text" id="txtFiltro">
+    <table id="tblCarreras">
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Carrera</th>
+          <th>Fecha de creación</th>
+          <th><i class="fas fa-cogs"></i></th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+
+
+    <script src="js/carreras.servicio.js"></script>
+    <script src="js/carreras.controlador.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  </body>
+</html>
