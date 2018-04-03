@@ -1,0 +1,27 @@
++---------------------+
+| Comandos de consola |
++---------------------+
+
+Comandos:
+	* npm -v:
+		- Version de Node Package Modules
+	
+	* node -v:
+		- Version de NodeJS
+	npm init:
+		- Inicializa los node package modules
+		- Crea el archivo package.json
+	* npm install
+	* npm install nodemon --save-dev
+	* node install
+	* a remote
+	* postinstall
+	* node server.js
+		
+		
+		
+		
+		
+Terminos:
+	Node Package Modules:
+		- Instalar y administrador dependencias
