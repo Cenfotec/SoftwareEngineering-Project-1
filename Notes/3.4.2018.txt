@@ -1,0 +1,29 @@
++----------------------+
+| Front-End & Back-End |
++----------------------+
+
+
+	Cliente									Servidor
++----------------+						+----------------+									
+|				 |	 Request (REQ)		|				 |
+|	[Public]     |	-------------->		|	[API]		 |	---> Base de datos:
+|	font-end	 |	 [Header] [Body]	|	back-end	 |			- Motor: MongoDB
+|				 |	 peticion			|				 |			- SABD (Sistema Administrador de Bases de Datos): mLab
+|	HTML		 |						|	NodeJS		 |
+|	CSS			 |	 Response (RES)		|				 |
+|	JavaScript	 |	<--------------		|				 |
+|				 |	 respuesta			|				 |
++----------------+						+----------------+
+
+Metodos / Tipos de Request:
+	- GET:
+		- Mas rapido
+		- Mas vulnerable
+	- POST:
+		- Mas lento
+		- Mas seguro
+		
+Servidor Web:
+	- Ente que nos permite pedir peticiones y retornar respuestas.
+	- Alojado en un puerto
+	- localhost:3000
