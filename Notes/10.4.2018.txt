@@ -1,0 +1,9 @@
++---------------+
+| Base de Datos |
++---------------+
+
+Collection (tabla)
+	|
+	+-> Su estructura es definida por un schema.
+	|
+	+-> Documents (registro)
