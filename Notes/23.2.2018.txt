@@ -24,8 +24,8 @@ th -> Se usa dentro del thead
 td -> Se usa dentro del tbody
 
 
-		 Columna
-			|
+         Columna
+            |
             v
 +--------+------+------+
 | Nombre | Edad | Sexo |-> thead
@@ -45,16 +45,16 @@ DOM (Document Object Model):
                         Table
                           |
                 +---------+------------+
-                |                      |             let fila = cuerpoTabla.insertRow(i);
+                |                      |              let fila = cuerpoTabla.insertRow(i);
               thead                  tbody
                 |                      |
                 tr                     tr
           +---+---+---+                |
           |   |   |   |        +--------------+      
           th  th  th  th       |    |    |    |
-	                           td   td   td   td
-                               |    |    |    |      fila.insertCell();
-							  text text text text
+                               td   td   td   td
+                               |    |    |    |       fila.insertCell();
+                              text text text text
 							 
-                                                     document.createTextNode('Harry Potter');
-                                                     celda.appendChild(sTitulo);
+                                                      document.createTextNode('Harry Potter');
+                                                      celda.appendChild(sTitulo);
