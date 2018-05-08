@@ -5,36 +5,36 @@
 Que (requerimientos) > Como (diagrama de flujo) > Programacion
 
 Casos de Uso:
-	Que es:
-	    - Capta alguna funcion visible para el usuario.
-		- Puede ser pequeño o grande.
-		- Logra un objetivo discreo para el usuario.
-		- Unos de los posibles usos que el usuario le puede dar a la aplicacion.
-		    - A esos usos se les conoce como "funcionalidad".
+    Que es:
+        - Capta alguna funcion visible para el usuario.
+        - Puede ser pequeño o grande.
+        - Logra un objetivo discreo para el usuario.
+        - Unos de los posibles usos que el usuario le puede dar a la aplicacion.
+            - A esos usos se les conoce como "funcionalidad".
     - Diagrama General:
-	    +--------------+-> Frontera del Sistema
-		|              |
-		| Casos de Uso |-> Casos de Uso <-> Pueden haber varios actores
-		|			   |
-		+--------------+
-	- Casos de Uso (CUAN -> Casos de Uso de Alto Nivel)/CUFE -> Casos de Uso en Formato Expandido)
-	- Es la interaccion entre el sistema y el usuario.
- 	- En UML al usuario se le conoce como "Actor". (Se representa con un muñeco)
-	- o>-< (Iniciar Sesion)
-	- 1 Actor -> 1 Nombre del Caso de Uso
-	- Actor:
-	    - Representa una entidad que interactua con el sistema.
-		- Estan fuera del sistema.
-		- Los actores usualmente son los roles.
-		Como Identificar:
-		    - Basada en Actores:
-			    - Identificar actores relacionados con el sistema o la empresa.
-				- Identificar los procesos que inicia o en los que participa.
-			- Basada en Eventos:
-			    - Identificar los eventos externos a los que un sistema ha de responder.
-				- Relacionar los eventons con los actores y con los casos de uso.
+        +--------------+-> Frontera del Sistema
+        |              |
+        | Casos de Uso |-> Casos de Uso <-> Pueden haber varios actores
+        |			   |
+        +--------------+
+    - Casos de Uso (CUAN -> Casos de Uso de Alto Nivel)/CUFE -> Casos de Uso en Formato Expandido)
+    - Es la interaccion entre el sistema y el usuario.
+    - En UML al usuario se le conoce como "Actor". (Se representa con un muñeco)
+    - o>-< (Iniciar Sesion)
+    - 1 Actor -> 1 Nombre del Caso de Uso
+    - Actor:
+        - Representa una entidad que interactua con el sistema.
+        - Estan fuera del sistema.
+        - Los actores usualmente son los roles.
+        Como Identificar:
+            - Basada en Actores:
+                - Identificar actores relacionados con el sistema o la empresa.
+                - Identificar los procesos que inicia o en los que participa.
+            - Basada en Eventos:
+                - Identificar los eventos externos a los que un sistema ha de responder.
+                - Relacionar los eventons con los actores y con los casos de uso.
 	
 UML:
-	- Funciona para planificar un sistema.
-	- Sirve para Visualizar, Especificar, Contruir y Documentar.
+    - Funciona para planificar un sistema.
+    - Sirve para Visualizar, Especificar, Contruir y Documentar.
 	

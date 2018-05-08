@@ -5,14 +5,14 @@
 
     Cliente	                                   Servidor
 +----------------+                        +----------------+									
-|				 |   Request (REQ)        |                |
-|   [Public]     |   -------------->      | [API]          |    ---> Base de datos:
-|   font-end	 |	 [Header] [Body]      | back-end       |            - Motor: MongoDB
-|				 |	 peticion             |                |            - SABD (Sistema Administrador de Bases de Datos): mLab
-|   HTML		 |                        | NodeJS         |
-|   CSS			 |	 Response (RES)       |                |
-|   JavaScript	 |	<--------------       |                |
-|				 |   respuesta            |                |
+|				 |    Request (REQ)       |                |
+|    [Public]    |    -------------->     |    [API]       |    ---> Base de datos:
+|    font-end    |    [Header] [Body]     |    back-end    |        - Motor: MongoDB
+|                |    peticion            |                |        - SABD (Sistema Administrador de Bases de Datos): mLab
+|    HTML        |                        |    NodeJS      |
+|    CSS         |    Response (RES)      |                |
+|    JavaScript	 |    <--------------     |                |
+|				 |    respuesta           |                |
 +----------------+                        +----------------+
 
 Metodos / Tipos de Request:
