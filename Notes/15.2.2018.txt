@@ -4,35 +4,35 @@
 
 - Modulos:
     - Configuracion:
-	    - Objetivo Secundario:
-		    - Estandarizar la calidad e integridad de la informacion.
-	- Principal:
-	    - Objetivo Secundario:
-		    - Es el mismo que los objetivos primarios.
-	- Reportes:
-	    - Objetivo Secundario:
-		    - Mostrar informacion actualizada y en tiempo real de los datos,
-			  cursos y rendimiento de los profesores. (Mostrar informacion)
-	- Seguridad:
-	    -  Objetivo Secundario:
-		    - Permitir la proteccion de la infomracion de los profesores.
+        - Objetivo Secundario:
+            - Estandarizar la calidad e integridad de la informacion.
+    - Principal:
+        - Objetivo Secundario:
+            - Es el mismo que los objetivos primarios.
+    - Reportes:
+        - Objetivo Secundario:
+            - Mostrar informacion actualizada y en tiempo real de los datos,
+              cursos y rendimiento de los profesores. (Mostrar informacion)
+    - Seguridad:
+        -  Objetivo Secundario:
+            - Permitir la proteccion de la infomracion de los profesores.
 			
 	
 - Empresa:
     - Objetivos:
-	    - Diferenciarlos de los requerimientos.
-		- Ejemplo: NO es registrar o eliminar usuarios.
-		- Ejemplo: ES controlar la informacion de los profesores de manera automatica.
-		- Ejemplo: Automatizar el proceso de evaluacion de los profesores.
-		- Asignar de manera mas eficiente los recursos a...
+        - Diferenciarlos de los requerimientos.
+        - Ejemplo: NO es registrar o eliminar usuarios.
+        - Ejemplo: ES controlar la informacion de los profesores de manera automatica.
+        - Ejemplo: Automatizar el proceso de evaluacion de los profesores.
+        - Asignar de manera mas eficiente los recursos a...
 		
 Problema a resolver:
     - NO son requerimientos.
-	- ES describir los procesos de lo que se tiene que hacer en el software.
-	- Descripcion con diagramas de flujo.
+    - ES describir los procesos de lo que se tiene que hacer en el software.
+    - Descripcion con diagramas de flujo.
 
 Diagramas:
     - Ejemplo: Inicio -> Recoleccion de Informacion. -> Validacion de Informacion -> Fin
-	- Todo diagrama, tabla o figura tiene que estar referenciada y tiene que estar 
+    - Todo diagrama, tabla o figura tiene que estar referenciada y tiene que estar 
 	  numerada y estar numerada y explicarlo en prosa.
 	

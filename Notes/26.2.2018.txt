@@ -3,40 +3,40 @@
 +--------------+
 
 Fisica: "Tarros"
-	- 0% Distribuido:
-		- Lo que usted tiene en su computadora. (MongoDB, Apache, CSS, JS)
-		- Parcialmente Distribuida:
-			- Aquella donde se distribuyen las tecnologias en diferentes computadoras.
-		- 100% Distribuida:
-			- Camponente en una computadora diferente. (Base de Datos, Servidor Web, etc...)
+    - 0% Distribuido:
+        - Lo que usted tiene en su computadora. (MongoDB, Apache, CSS, JS)
+        - Parcialmente Distribuida:
+            - Aquella donde se distribuyen las tecnologias en diferentes computadoras.
+        - 100% Distribuida:
+            - Camponente en una computadora diferente. (Base de Datos, Servidor Web, etc...)
 
 Logica: "Programacion"
-	- 1 Capa
-	- Cliente -> Servidor
-		- Servidor: Base de Datos y Logica
-		- Cliente: Formularios (HTML, CSS, etc...)
-	- N' Capas
+    - 1 Capa
+    - Cliente -> Servidor
+        - Servidor: Base de Datos y Logica
+        - Cliente: Formularios (HTML, CSS, etc...)
+    - N' Capas
 	
 	
 	
 Red:
-	- Un conjunto de computados que comparten recursos
-	  y se pueden comunicar entre ellas. (TCP/IP)
+    - Un conjunto de computados que comparten recursos
+      y se pueden comunicar entre ellas. (TCP/IP)
 	  
-	  Servidor <-> Cliente
-					  |
-					  +-> Logica
+    Servidor <-> Cliente
+                    |
+                    +-> Logica
 					  
-		Capa de Presentacion - Capa Logica - Capa de Datos
+    Capa de Presentacion - Capa Logica - Capa de Datos
 		
 		
 		
 		
 Requerimientos:
-	- Opcionales (Asunto del desarrollador)
-	- Deseables
-	- Primarios -> Alta Prioridad
-	- Secundarios -> Mediana Prioridad y Baja Prioridad
+    - Opcionales (Asunto del desarrollador)
+    - Deseables
+    - Primarios -> Alta Prioridad
+    - Secundarios -> Mediana Prioridad y Baja Prioridad
 		
 		
 		
@@ -47,11 +47,11 @@ Requerimientos:
 +--------------------------------+	
 
 +------------+--------------------+----------------+
-|			 |	  Importante	  |	No importante  |
+|            |    Importante      | No importante  |
 +------------+--------------------+----------------+
 |  Urgente   |   alta prioridad   | baja prioridad |
 +------------+--------------------+----------------+
-| No Urgente |	mediana prioridad |	  ignorable	   |
+| No Urgente |  mediana prioridad |    ignorable   |
 +------------+--------------------+----------------+
 
 
@@ -73,7 +73,7 @@ Tipo <opcionales deseables primarios secundarios>
 Dependencias REQ X
 Actores Actor asociado
 Descripcion <Breve descripcion de lo que hace en resumen el caso de uso>
-			Siempre debe empezar con la frase "Este caso de uso inicia cuando..."
+            Siempre debe empezar con la frase "Este caso de uso inicia cuando..."
 
 
 
