@@ -15,7 +15,7 @@ Casos de Uso:
         +--------------+-> Frontera del Sistema
         |              |
         | Casos de Uso |-> Casos de Uso <-> Pueden haber varios actores
-        |			   |
+        |              |
         +--------------+
     - Casos de Uso (CUAN -> Casos de Uso de Alto Nivel)/CUFE -> Casos de Uso en Formato Expandido)
     - Es la interaccion entre el sistema y el usuario.
