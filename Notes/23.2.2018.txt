@@ -3,20 +3,20 @@
 +--------+
 
 <table id="tblLibros">
-	<thead>
+    <thead>
 	
 	
-	<tr>
-		<th> Nombre </th>
-		<th> Edad </th>
-	</tr>
+    <tr>
+        <th> Nombre </th>
+        <th> Edad </th>
+    </tr>
 	
 	
-	<tbody>
+    <tbody>
 	
-	</tbody>
-		-> Todos los datos que se deseen mostrar
-	</thead>
+    </tbody>
+        -> Todos los datos que se deseen mostrar
+    </thead>
 </table>
 
 
