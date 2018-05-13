@@ -1,0 +1,22 @@
+/*Scrool bar*/
+::-webkit-scrollbar{
+  width: 15px;
+  background: #673ab7;
+  opacity: 0.2;
+  border: none;
+}
+
+::-webkit-scrollbar-track{
+  background:#ddd;
+  border: none;
+}
+::-webkit-scrollbar-thumb{
+  background: -webkit-linear-gradient(top, #673ab7,  #673ab7);
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #5b30a8;
+}
+/* Pseudo-clase */
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #ddd;
+}

@@ -1,0 +1,58 @@
+/* Large input */
+#txtAObservacion {
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 50px;
+  max-height: 160px;
+
+  margin-left: 20px;
+}
+#divNota{
+  display: block;
+  margin-left: 80px;
+
+}
+/*------------------------------------------*/
+
+#Periodo, #Curso, #Profesores, #Evaluacion {
+  margin-top: 100px;
+}
+
+.tab {
+    width: 500px;
+    top: 51px;
+    left: 84.4px;
+    position: relative;
+}
+
+.tab div {
+  position: absolute;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: all 0.2s ease;
+    font-size: 17px;
+    border-bottom: 2px solid #BEBEBE;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #E0E0E0;
+    border-radius: 2px 2px 0 0;
+    border-bottom: 2px solid #4285F4;
+}
+
+/* Style the tab content */
+.tabContent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}

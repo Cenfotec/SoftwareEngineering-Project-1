@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CenfoSys | Inicio de sesión</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/style_iniciarSesion.css">
+  <!-- <link rel="stylesheet" href="../css/modal_iniciarSesion.css"> -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="icon" href="../img/logoCenfoSysTab.png">
+</head>
+
+<body>
+  <main>
+    <section>
+      <div class="iniciar">
+        <img src="../img/logoMorado.png" alt="Logo Cenfotec" width="400">
+        <h1>Ingrese los datos solicitados para iniciar sesión</h1>
+        <form>
+          <label for="txtId">Identificación:</label>
+          <input type="text" id="txtId">
+
+          <label for="txtContra">Contraseña:</label>
+          <input type="password" id="txtContra">
+
+          <button type="button" id="btnIniciar">
+            Iniciar sesión
+          </button>
+
+          <p id="restablecerContra">Recuperar contraseña</p>
+        </form>
+      </div>
+    </section>
+
+
+    <!-- The Modal 1-->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content" id="scrollModal">
+        <div class="close">
+          <span>&times;
+            <span>
+        </div>
+
+        <div class="modal-body">
+          <section id="modal1">
+            <section id="topInformation">
+              <div>
+                <img src="../img/password.png" alt="password" id="imgPassword">
+                <label class="lblNombre" id="lblNombre">Restablecer contraseña</label>
+              </div>
+            </section>
+
+            <section id="selectInformation">
+              <div id="divId" class="selectInformationActive">
+                <span id="id"> Digite su identificación:</span>
+              </div>
+              <div id="personalInformation">
+                <input type="text" id="txtId2" required placeholder="Identificación...">
+              </div>
+              <div id="divCorreo" class="selectInformationActive">
+                <span id="correo"> Digite su correo electrónico:</span>
+                <div id="personalInformation">
+                  <input type="text" id="txtCorreo" required placeholder="Correo electrónico...">
+                </div>
+              </div>
+            </section>
+
+            <section id="middleInformation">
+
+
+              <div id="boton">
+                <button type="button" id="btnSolicitar">Solicitar contraseña</button>
+              </div>
+            </section>
+          </section>
+
+          <section id="modal2">
+            <section id="topInformation">
+              <div>
+                <img src="../img/password.png" alt="password" id="imgPassword">
+                <label class="lblNombre" id="lblNombre">Restablecer contraseña</label>
+              </div>
+            </section>
+
+            <section id="selectInformation">
+              <div id="divId" class="selectInformationActive">
+                <span id="id"> La contraseña fue restablecida exitosamente.</span>
+              </div>
+              <div id="contrasennaNueva" class="selectInformationActive">
+                <span id="contrasennaNueva"> Su nueva contraseña es: </span>
+                <p id="pContraNueva"> </p>
+              </div>
+            </section>
+
+            <section id="middleInformation">
+            </section>
+          </section>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="../js/servicio_registrarProfesor.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/servicio_funcionarios.js"></script>
+  <script src="../js/servicio_modificarProfesor.js"></script>
+  <script src="../js/servicio_iniciarSesion.js"></script>
+  <script src="../js/controlador_iniciarSesion.js"></script>
+</body>
+
+</html>

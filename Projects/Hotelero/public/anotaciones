@@ -1,0 +1,75 @@
+Arreglo usuario:
+  Cedula: 0
+  sPNombre: 1
+  sSNombre: 2
+  sPApellido: 3
+  sSApellido: 4
+  sEdad: 5
+  sTelefono: 6
+  sCorreo: 7
+  Cliente: 8
+  sContrasenna: 9
+  sEstado: 10
+
+Arreglo hotel:
+  sNombreHotel: 0
+  sTelefonoServicio: 1
+  sCorreoServicio: 2
+  TelefonoReservacion: 3
+  sCorreoReservacion: 4
+  sProvincia: 5
+  sCanton: 6
+  sDistrito: 7
+  sDirección: 8
+  latitud: 9
+  longitud: 10
+  sFotografia: 11
+  bEstado: 12
+
+  Arreglo evaluacion:
+    sHotel: 0
+    sCliente: 1
+    sComida: 2
+    sServicio: 3
+    sHabitacion: 4
+    sInfraestructura: 5
+    sLimpieza: 6
+
+MongoDB:
+  Usuario:
+    - cedula: 0
+    - pNombre: 1
+    - sNombre: 2
+    - pApellido: 3
+    - sApellido: 4
+    - edad: 5
+    - telefono: 6
+    - correo: 7
+    - cliente: 8
+    - password: 9
+    - estado: 10
+  Hotel:
+      - nombre: 0
+      - telServicio: 1
+      - correoServicio: 2
+      - telReservacion: 3
+      - correoReservacion: 4
+      - provincia: 5
+      - canton: 6
+      - distrito: 7
+      - direccion: 8
+      - latitud: 9
+      - longitud: 10
+      - fotografia: 11
+      - estado: 12
+  Evaluaciones:
+      - hotel: 0
+      - cliente: 1
+      - comida: 2
+      - servicio: 3
+      - habitacion: 4
+      - infraestructura: 5
+      - limpieza: 6
+
+Verde: #26A69A
+Verde hover: #00796B

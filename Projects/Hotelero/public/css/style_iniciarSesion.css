@@ -1,0 +1,41 @@
+form div {
+  display: inline-block;
+  position: relative;
+  margin-top: 50px;
+}
+
+form:first-child {
+  margin-left: 100px;
+}
+
+form:last-child {
+  margin-left: 100px;
+}
+
+#btnLogin {
+  margin-left: 290px;
+}
+
+form div input {
+  height: 25px;
+  width: 180px;
+}
+
+form div label {
+  position: absolute;
+  top: -16px;
+  font-size: 14px;
+}
+
+.fa-chevron-down {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 95% !important;
+  left: 50%;
+  font-size: 30px;
+  color: #4285F4;
+}
+
+.infoCard:first-child {
+  margin-top: 150px;
+}

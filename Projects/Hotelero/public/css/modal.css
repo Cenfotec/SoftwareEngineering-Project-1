@@ -1,0 +1,82 @@
+/* Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #FFF;
+    margin: 3% auto;
+    padding: 0;
+    border: 1px solid #BEBEBE;
+    border-radius: 2px;
+    width: 60%;
+    height: 84%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: modalAnimation;
+    animation-duration: 0.4s;
+    text-align: center;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  padding: 0.5px;
+  border-radius: 50%;
+  transform: scale(2.5);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  left: 94.5%;
+  top: 25px;;
+  width: 21.33px;
+  height: 21.33px;
+}
+
+.close:hover {
+  background-color: #E0E0E0;
+}
+
+.close:active {
+  background-color: #BEBEBE;
+}
+
+.close span {
+  color: #EF5350;
+}
+
+/* Modal Body */
+.modal-body {
+  padding: 15px 16px;
+  color: #171820;
+}
+
+#modalHeader {
+  color: #4C4C4C;
+}
+
+/* Modal Animation */
+@keyframes modalAnimation {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    50% {
+      opacity: 0.8;
+      transform: scale(1.05);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+}
+/*------------------------------------------*/

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Hotelero | Modificar</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/swal.css">
+    <link rel="stylesheet" href="css/style_modificarHotel.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/plantilla.css">
+    <link rel="stylesheet" href="css/estilosGenerales.css">
+    <link rel="icon" href="img/favicon.png">
+  </head>
+  <body>
+
+    <header>
+      <nav>
+        <ul>
+          <li><img id="navLogo" src="img/logo.png" alt=""></li>
+          <li id="btnPanelControl"><a href="panelControl_administrador.html">Lista de hoteles</a></li>
+          <li id="btnLogout"><a href="#">Cerrar sesión</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+          <div class="mainCard">
+            <div><h1 id="lblNombre"></h1></div>
+          </div>
+
+          <div class="card">
+            <form>
+              <div>
+                <label for="txtNombreHotel">Nombre *</label>
+                <input type="text" id="txtNombreHotel" required>
+              </div>
+
+              <div>
+                <label for="txtTelefonoServicio">Teléfono servicio al cliente *</label>
+                <input type="number" id="txtTelefonoServicio" required>
+              </div>
+
+              <div>
+                <label for="txtCorreoServicio">Correo servicio al cliente *</label>
+                <input type="email" id="txtCorreoServicio" required>
+              </div>
+
+              <div>
+                <label for="txtTelefonoReservacion">Teléfono reservaciones *</label>
+                <input type="number" id="txtTelefonoReservacion" required>
+              </div>
+
+              <div>
+                <label for="txtCorreoReservacion">Correo reservaciones *</label>
+                <input type="email" id="txtCorreoReservacion" required>
+              </div>
+
+              <div>
+                <label for="sltProvincia">Provincia *</label>
+                <select id="sltProvincia" required>
+                  <option value="">Seleccione una provincia</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="sltCanton">Cantón *</label>
+                <select id="sltCanton" required>
+                  <option value="">Seleccione una cantón</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="sltDistrito">Distrito *</label>
+                <select id="sltDistrito" required>
+                  <option value="">Seleccione una distrito</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="txtFotografia">Fotografía</label>
+                <button type="button" id="btnSeleccionarImagen" class="extraButton">Seleccionar imagen</button>
+              </div>
+
+              <div>
+                <label for="txtDireccion">Dirección exacta *</label>
+                <input type="text" id="txtDireccion" required>
+              </div>
+            </form>
+          </div>
+          <div id="divMapaHotel"><div id="mapaHotel"></div></div>
+
+          <button type="button" id="btnActualizar" class="button">Actualizar</button>
+
+
+
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/jquery.cloudinary/1.0.18/jquery.cloudinary.js' type='text/javascript'></script>
+    <script src="https://widget.cloudinary.com/global/all.js" type="text/javascript"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDECsujZJTZAHhvpfnjH6j3C3g78s_y4JA&callback=initMap"></script>
+    <script src="js/fotografiaHotel.js"></script>
+    <script src="js/ubicacion.js"></script>
+    <script src="js/servicio_usuario.js"></script>
+    <script src="js/servicio_hotel.js"></script>
+    <script src="js/servicio_iniciarSesion.js"></script>
+    <script src="js/controlador_modificarHotel.js"></script>
+  </body>
+</html>

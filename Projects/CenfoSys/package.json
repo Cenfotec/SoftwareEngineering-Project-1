@@ -1,0 +1,19 @@
+{
+  "name": "cenfosys",
+  "version": "1.0.0",
+  "description": "Arquitectura de la aplicacion CenfoSys",
+  "main": "api/index.js",
+  "scripts": {
+    "test": "node index.js",
+    "start": "node server.js"
+  },
+  "author": "Code Monkeys",
+  "license": "ISC",
+  "dependencies": {
+    "connect": "^3.6.6",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.14",
+    "morgan": "^1.9.0",
+    "serve-static": "^1.13.2"
+  }
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>CenfoSys | Asociaciones</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="../css/swal.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/estilosGenerales.css">
+    <link rel="stylesheet" href="../css/plantilla.css">
+    <link rel="stylesheet" href="../css/style_asociarCarreraSede.css">
+    <link rel="icon" href="../img/logoCenfoSysTab.png">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="">
+                <a href="#">
+                    <img src="../img/logoBlanco.png" alt="Logo Cenfotec" width="180">
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <span id="tituloPrincipal">Asociar carrera a sede</span>
+                </li>
+                <li>
+                    <span id="nombreSesion"></span>
+                    <span id="sesionDerecha">
+                        <i class="fas fa-user"></i>
+                    </span>
+                </li>
+                <li>
+                    <span id="logoutDerecha">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="">
+        <ul>
+          <li id="btnProfesores"><a href="#">Profesores</a></li>
+          <li id="btnFuncionarios"><a href="#">Funcionarios</a></li>
+          <li id="btnSedes"><a href="#">Sedes</a></li>
+          <li id="btnCarreras"><a href="#">Carreras</a></li>
+          <li id="btnCursosCarrera"><a href="#">Cursos de Carrera</a></li>
+          <li id="btnCursosActualizacion"><a href="#">Cursos de Actualización</a></li>
+          <li id="btnEvaluaciones"><a href="#">Evaluaciones</a></li>
+          <li id="btnPeriodos"><a href="#">Periodos</a></li>
+          <li id="btnAsociaciones"><a href="#">Asociaciones</a></li>
+          <span id="CenfoSys">CenfoSys®</span>
+        </ul>
+    </aside>
+
+    <main id="mainPrincipal">
+        <section>
+            <div id="flechaIzquierda">
+                <span>
+                    <i class="fas fa-arrow-left"></i>
+                    <span>
+            </div>
+            <div id="botonPrincipal">
+                <button type="button" id="btnAsociar">Asociar</button>
+            </div>
+        </section>
+
+        <section class="formSection">
+            <div class="formTitle">
+                <span class="formType">Asociación</span>
+                <span class="formAction">Carreras</span>
+            </div>
+
+            <p class="pHelp">Seleccione la carrera que desea añadir a las sedes</p>
+
+            <div id="topListSection">
+              <i class="fas fa-search"></i>
+              <input type="text" placeholder="Buscar" class="buscar" id="txtBuscarCarreras">
+            </div>
+
+                <section id="sectionTablas">
+                    <!-- Tabla de carreras -->
+                    <div id="scrollTablaCarreras">
+                        <table id="tblCarreras" class="table">
+                            <thead>
+                                <tr>
+                                    <th>Seleccionar</th>
+                                    <th>Código</th>
+                                    <th class="celda">Nombre</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                  </section>
+              </section>
+                <section class="formSection">
+                    <div class="formTitle">
+                        <span class="formType">Asociación</span>
+                        <span class="formAction">Sedes</span>
+                    </div>
+
+                    <p class="pHelp">Seleccione las sedes que desea añadirle una carrera</p>
+
+                  <div id="topListSection">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Buscar" class="buscar" id="txtBuscarSedes">
+                  </div>
+
+                    <!-- Tabla de cursos -->
+                    <div id="scrollTablaCursos">
+                        <table id="tblSedes" class="table">
+                            <thead>
+                                <tr>
+                                    <th>Seleccionar</th>
+                                    <th>Nombre</th>
+                                    <th>Tipo</th>
+                                    <th class="celda">Provincia</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+
+    </main>
+
+
+
+
+
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../js/servicio_iniciarSesion.js"></script>
+    <script src="../js/panelControl_handler.js"></script>
+    <script src="../js/servicio_registrarProfesor.js"></script>
+    <script src="../js/navActions.js"></script>
+    <script src="../js/servicio_Sede.js"></script>
+    <script src="../js/servicio_registrarCarrera.js"></script>
+    <script src="../js/controlador_asociarCarreraSede.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</body>
+
+</html>

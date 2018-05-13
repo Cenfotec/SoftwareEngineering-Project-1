@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Hotelero | Registrar</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/swal.css">
+    <link rel="stylesheet" href="css/style_homepageRegistrar.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/plantilla.css">
+    <link rel="stylesheet" href="css/estilosGenerales.css">
+    <link rel="icon" href="img/favicon.png">
+  </head>
+  <body>
+
+    <header>
+      <nav>
+        <ul>
+          <li><img id="navLogo" src="img/logo.png" alt=""></li>
+          <li id="btnInicio"><a href="index.html">Inicio</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <div class="mainCard">
+        <div><h1>Registro de cliente</h1></div>
+      </div>
+
+      <div class="card">
+        <form>
+            <div>
+              <label for="txtCedula">Cédula</label>
+              <input type="text" id="txtCedula" required></input>
+            </div>
+
+            <div>
+              <label for="txtPNombre">Primer nombre</label>
+              <input type="text" id="txtPNombre" required></input>
+            </div>
+
+            <div>
+              <label for="txtSNombre">Segundo nombre</label>
+              <input type="text" id="txtSNombre"></input>
+            </div>
+
+            <div>
+              <label for="txtPApellido">Primer apellido</label>
+              <input type="text" id="txtPApellido" required></input>
+            </div>
+
+            <div>
+              <label for="txtSApellido">Segundo apellido</label>
+              <input id="txtSApellido"></input>
+            </div>
+
+            <div>
+              <label for="txtEdad">Edad</label>
+              <input type="number" id="txtEdad" required></input>
+            </div>
+
+            <div>
+              <label for="txtTelefono">Teléfono</label>
+              <input type="tel" id="txtTelefono" required></input>
+            </div>
+
+            <div>
+              <label for="txtCorreo">Correo electrónico</label>
+              <input type="email" id="txtCorreo" required></input>
+            </div>
+
+            <div>
+              <label for="txtPassword">Contraseña</label>
+              <input type="password" id="txtPassword" required></input>
+            </div>
+
+          </form>
+
+        <button type="button" id="btnRegistrar" class="button">Registrar</button>
+    </div id="bottomInformation">
+
+      <div id="flechaAbajo">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+
+      <section id="sectionInformation">
+        <div class="infoCard">
+          <p class="title">¿Qué es Hotelero?</p>
+          <p class="information">Aquí podras encontrar una gran cantidad lista de hoteles,
+                                    y podras compararlos para ver cual te gusta más.</p>
+        </div>
+
+        <div class="infoCard">
+          <p class="title">¿Qué podes hacer?</p>
+          <p class="information">Conforma vas viendo todos los hoteles, podes libremente califarlos basandote
+                                en tu experiencia propia.</p>
+        </div>
+
+        <div class="infoCard">
+          <p class="title">¿Qué podes calificar?</p>
+          <p class="information">Cualquier hotel donde te allás hospedado, podes calificarlo.
+                                Desde comidas, habitaciones, infraestructura, etc...</p>
+        </div>
+      </section>
+
+    </main>
+
+
+
+    <footer>
+      <img src="img/logo_blanco.png" alt=""><span>Copyright 2018 hotelero | All rights reserved.</span>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/servicio_usuario.js"></script>
+    <script src="js/controlador_registrarUsuarioHomePage.js"></script>
+  </body>
+</html>

@@ -1,0 +1,371 @@
+/* Plantilla */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background-image: url('../img/fondoGeneral.png');
+  background-size: 100% 100%;
+}
+
+html {
+  height: 100%;
+}
+
+/* Container Principal */
+#container {
+  margin: 2.45%;
+  background-color: #FFF;
+  padding: 2%;
+  height: 468px;
+  width: 90%;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  overflow: auto;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+/*------------------------------------------*/
+
+/* Boton */
+
+.ocultar{
+  display: none;
+}
+.botonTabla {
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-size: 12px;
+  font-family: 'Raleway', sans-serif;
+  padding: 4px 15px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.botonTabla:first-child {
+  margin-right: 10px;
+}
+
+.botonTabla:last-child {
+  margin-left: 10px;
+}
+
+
+.boton {
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.boton:hover, .botonTabla:hover {
+  cursor: pointer;
+}
+
+.botonNormal {
+  outline: none;
+  border: none;
+  background-color: #31358E;
+}
+
+.botonNormal:hover {
+  background-color: #2a2d72;
+}
+
+
+.botonActivar {
+  outline: none;
+  border: none;
+  background-color: #0B7A52;
+}
+
+.botonActivar:hover {
+  background-color: #0a6644;
+}
+
+
+.botonDesactivar {
+  outline: none;
+  border: none;
+  background-color: #D32F2F;
+}
+
+.botonDesactivar:hover {
+  background-color: #b22929;
+}
+/*------------------------------------------*/
+
+/* Buscar Container */
+.buscarContainer {
+  position: relative;
+}
+
+.buscar {
+  width: 500px;
+  height: 30px;
+  padding: 2px 5px 2px 50px;
+  border: 1px solid grey;
+  outline: none;
+  font-size: 18px;
+  color: grey;
+  font-style: 'Raleway', sans-serif;
+  margin-left: 20%;
+}
+
+.botonesArriba {
+  width: 20%;
+  display: inline-block;
+}
+
+.buscar:focus {
+  border: 1px solid #9E2169;
+}
+
+.fa-search {
+  position: absolute;
+  top: 14px;
+  left: 31%;
+  color: grey;
+}
+/*------------------------------------------*/
+
+
+
+
+
+/* Inputs & Labels */
+form {
+  position: relative;
+}
+form .input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid #9E2169;
+  width: 100px;
+  color: grey;
+  font-size: 14px;
+}
+
+form label {
+  font-size: 13px;
+  color: #9E2169;
+}
+
+.invalido{
+  background-color: transparent;
+  border: 1px solid #D32F2F;
+  border-radius: 2px;
+  width: 100px;
+  color: grey;
+  font-size: 14px;
+}
+
+/*------------------------------------------*/
+
+
+
+
+/* Text Area */
+
+.textArea {
+  border: 1px solid #463561;
+  outline: none;
+  background-color: transparent;
+  width: 200px;
+  height: 100px;
+  color: grey;
+  font-size: 14px;
+  display: block;
+  margin-left: 30px;
+}
+/*------------------------------------------*/
+
+
+
+/* Inputs & Labels */
+table {
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+  color: #4C4C4C;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #F2F2F2;
+}
+
+tr:hover {
+  background-color: #DDD;
+  cursor: default;
+}
+
+th, td {
+  width: 300px;
+  height: 40px;
+  border: 1px solid #DDD;
+}
+
+th:first-child, td:first-child {
+  width: 600px;
+  height: 40px;
+}
+
+
+th {
+  background-color: #85C242;
+  font-size: 18px;
+  letter-spacing: 1.2px;
+}
+
+td {
+  font-size: 16px;
+}
+
+/*------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Modal (fondo) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #F2F2F2;
+    margin: 5% auto;
+    padding: 0;
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 80%;
+    height: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: modalAnimation;
+    animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+    color: #D32F2F;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    left: 97%;
+    top: 0;
+}
+
+.close:hover,
+.close:focus {
+    color: #B22929;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal Header */
+.modal-header {
+    padding: 30px 15px;
+    color: white;
+    border-bottom: 1px solid #bcbfd8;
+}
+
+/* Modal Body */
+.modal-body {
+  padding: 2px 16px;
+}
+
+
+
+/* Modal Animation */
+@keyframes modalAnimation {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    50% {
+      opacity: 0.8;
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+}
+/*------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Scrool Bar */
+::-webkit-scrollbar{
+  width: 15px;
+  background: #673ab7;
+  opacity: 0.2;
+  border: none;
+}
+
+::-webkit-scrollbar-track{
+  background:#ddd;
+  border: none;
+}
+::-webkit-scrollbar-thumb{
+  background: -webkit-linear-gradient(top, #673ab7,  #673ab7);
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #5b30a8;
+}
+/* Pseudo-clase */
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #ddd;
+}
+
+#scrollTabla{
+  height: 315px;
+  width: 1277px;
+  overflow: auto;
+  margin: 20px auto;
+}
+/*------------------------------------------*/

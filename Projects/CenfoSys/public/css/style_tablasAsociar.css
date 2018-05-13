@@ -1,0 +1,143 @@
+/* Posicionamiento de elementos */
+
+#sectionTablas {
+    position: absolute;
+    width: 25%;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+    top: 205px;
+}
+
+#scrollTablaCursos {
+    height: 150px;
+    width: 350px;
+    overflow: auto;
+    left: 20px;
+}
+
+#tblCursos {
+    padding-top: 20px;
+    position: absolute;
+}
+#tblSedes {
+    padding-top: 20px;
+    position: absolute;
+}
+
+.containerTablasCursos {
+    display: flow-root;
+    margin-left: 27%;
+}
+
+#asociarSedes {
+    position: absolute;
+    left: 520px;
+    top: 0px;
+}
+
+#scrollTablaSedes {
+    height: 150px;
+    width: 255px;
+    overflow: auto;
+    left: 5px;
+}
+
+
+/* -------------------------------- */
+
+
+/* Pantilla de estilos de tablas */
+
+h3 {
+    font-size: 16px;
+    color: #9E2169;
+}
+
+#asociarSedes h3{
+    width: 280px;
+}
+
+.fa-search {
+    position: absolute;
+    top: 42px;
+    left: 10%;
+    color: grey;
+}
+
+tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+tr:hover {
+    background-color: #DDD;
+    cursor: default;
+}
+
+th,
+td {
+    width: 200px;
+    height: 25px;
+    border: 1px solid #DDD;
+}
+
+th:first-child,
+td:first-child {
+    width: 30px;
+    height: 25px;
+}
+
+th {
+    background-color: #85C242;
+    font-size: 15px;
+    letter-spacing: 1.2px;
+}
+
+td {
+    font-size: 15px;
+}
+
+.buscarTablas {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.buscarInput:focus {
+    border: 1px solid #9E2169;
+}
+
+.botonEstilo {
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    color: #FFF;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    display: inline-block;
+}
+
+.botonNormalTabla {
+    outline: none;
+    border: none;
+    background-color: #31358E;
+}
+
+.botonNormalTabla:hover {
+    background-color: #2a2d72;
+}
+
+
+table {
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    color: #4C4C4C;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td,
+.celda {
+    width: 100px;
+}

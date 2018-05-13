@@ -1,0 +1,8 @@
+#topInformation:first-child {
+  width: 600px;
+  margin-top: 5%;
+}
+
+#personalInformation div {
+  margin-left: 245px;
+}

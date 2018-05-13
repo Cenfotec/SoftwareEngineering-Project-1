@@ -1,0 +1,208 @@
+/* Plantilla */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background-image: url('../img/fondoGeneral.png');
+  background-size: 100% 100%;
+}
+
+html {
+  height: 100%;
+}
+
+/* Container Principal */
+#container {
+  margin: 2.45%;
+  background-color: #FFF;
+  padding: 2%;
+  height: 468px;
+  width: 90%;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  overflow: auto;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+/*------------------------------------------*/
+
+
+/* Inputs & Labels */
+
+form {
+    position: relative;
+}
+
+form div {
+    position: absolute;
+}
+
+form div select {
+    margin: 60px;
+    height: 30px;
+    font-size: 13px;
+    overflow-y: scroll;
+}
+
+form select:hover {
+    border-bottom: solid 1px rgb(207, 207, 207);
+    cursor: pointer;
+}
+
+form .input {
+    border: none;
+    outline: none;
+    margin: 30px;
+    margin-top: 10px;
+    background-color: transparent;
+    border-bottom: 1px solid #9E2169;
+    width: 230px;
+    color: grey;
+    font-size: 15px;
+}
+
+form label {
+    font-size: 16px;
+    color: #9E2169;
+}
+
+.invalido {
+    background-color: transparent;
+    border: 1px solid #D32F2F;
+    margin: 20px;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 2px;
+    color: grey;
+    font-size: 16px;
+}
+
+.nombreSede {
+    left: 100px;
+    width: 310px;
+}
+
+#txtNombreSede {
+    width: 260px;
+}
+
+#tipoSede {
+    left: 100px;
+    top: 70px;
+    width: 300px;
+}
+
+#sltTipoSede {
+    width: 260px;
+}
+
+#provincia {
+    left: 100px;
+    top: 140px;
+    width: 300px;
+}
+
+#sltProvincia {
+    width: 263px;
+}
+
+#canton {
+    left: 100px;
+    top: 220px;
+    width: 300px;
+}
+
+#sltCanton {
+    width: 263px;
+}
+
+#distrito {
+    left: 100px;
+    top: 300px;
+    width: 300px;
+}
+
+#sltDistrito {
+    width: 263px;
+}
+
+.direccion {
+    left: 40px;
+    top: 400px;
+    width: 400px;
+}
+
+#txtDireccion {
+    width: 400px;
+}
+
+.botonNormal {
+    position: absolute;
+    right: 200px;
+    bottom: 150px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    color: #FFF;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px 25px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: #31358E;
+}
+
+.botonNormal:hover {
+    background-color: #2a2d72;
+}
+
+.botonNormal:hover {
+    cursor: pointer;
+}
+
+
+/* Mapa */
+
+#mapaSede {
+    width: 500px;
+    height: 300px;
+    top: 100px;
+    right: 115px;
+    border: 1px solid #463561;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    animation: grande 1s ease;
+}
+
+#mapaSede:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+#mostrarMapa {
+    right: 200px;
+    top: 50px;
+}
+
+#checkboxMostrarMapa {
+    display: inline-block;
+    margin-left: 100px;
+}
+
+.ocultar {
+    display: none;
+}
+
+@keyframes grande {
+    0% {
+        transform: scale(0);
+    }
+    10% {
+        transform: scale(1);
+    }
+}

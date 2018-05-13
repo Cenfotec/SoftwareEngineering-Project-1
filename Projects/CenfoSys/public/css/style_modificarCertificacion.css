@@ -1,0 +1,12 @@
+.noFlecha {
+  display: inline-block !important;
+  cursor: default !important;
+}
+
+.noFlecha:hover {
+  background-color: transparent !important;
+}
+
+.noFlecha:active {
+  background-color: transparent !important;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>CenfoSys | Cursos de actualización</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="../css/swal.css">
+    <link rel="stylesheet" href="../css/tooltip.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/estilosGenerales.css">
+    <link rel="stylesheet" href="../css/plantilla.css">
+    <link rel="stylesheet" href="../css/style_listarCarreras.css">
+    <link rel="icon" href="../img/logoCenfoSysTab.png">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="">
+          <a href="#"><img src="../img/logoBlanco.png" alt="Logo Cenfotec" width="180"></a>
+        </div>
+        <ul>
+          <li><span id="tituloPrincipal">Lista de cursos de carrera</span></li>
+          <li><span id="nombreSesion"></span><span id="sesionDerecha"><i class="fas fa-user"></i></span></li>
+          <li><span id="logoutDerecha"><i class="fas fa-sign-out-alt"></i></span></li>
+        </ul>
+      </nav>
+    </header>
+
+    <aside class="">
+      <ul>
+        <li id="btnProfesores"><a href="#">Profesores</a></li>
+        <li id="btnFuncionarios"><a href="#">Funcionarios</a></li>
+        <li id="btnSedes"><a href="#">Sedes</a></li>
+        <li id="btnCarreras"><a href="#">Carreras</a></li>
+        <li id="btnCursosCarrera"><a href="#">Cursos de Carrera</a></li>
+        <li id="btnCursosActualizacion"><a href="#">Cursos de Actualización</a></li>
+        <li id="btnEvaluaciones"><a href="#">Evaluaciones</a></li>
+        <li id="btnPeriodos"><a href="#">Periodos</a></li>
+        <li id="btnAsociaciones"><a href="#">Asociaciones</a></li>
+        <span id="CenfoSys">CenfoSys®</span>
+      </ul>
+    </aside>
+
+    <main id="mainPrincipal">
+      <section>
+        <div id="flechaIzquierda">
+          <span><i class="fas fa-arrow-left"></i><span>
+        </div>
+      </section>
+
+      <section class="formSection">
+        <div class="formTitle">
+          <span class="formType">Curso de actualización</span>
+          <span class="formAction">Lista de cursos de actualización</span>
+        </div>
+
+        <div id="topListSection">
+          <i class="fas fa-search"></i><input type="text" placeholder="Buscar" class="buscar" id="txtBuscar">
+          <div id="topListButtons">
+            <button type="button" id="btnDesactivados" class="boton botonNormal">VER DESACTIVADOS</button>
+            <button type="button" id="btnActivados" class="boton botonNormal">VER ACTIVADOS</button>
+          </div>
+        </div>
+
+
+
+
+
+
+        <table id="tblCursos">
+  			  <thead>
+    				<tr>
+    				  <th>Opciones</th>
+              <th>Código</th>
+              <th>Nombre</th>
+              <th>Horas</th>
+              <th>Costo</th>
+              <th>Inicio</th>
+              <th>Fin</th>
+    				</tr>
+  			  </thead>
+  			  <tbody>
+
+  			  </tbody>
+  			</table>
+      </section>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../js/servicio_iniciarSesion.js"></script>
+    <script src="../js/panelControl_handler.js"></script>
+    <script src="../js/servicio_registrarProfesor.js"></script>
+    <script src="../js/navActions.js"></script>
+    <script src="../js/servicio_funcionarios.js"></script>
+    <script src="../js/servicio_cursos.js"></script>
+    <script src="../js/controlador_listarCursosActii.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  </body>
+</html>

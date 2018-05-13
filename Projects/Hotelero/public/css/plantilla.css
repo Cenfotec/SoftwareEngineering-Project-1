@@ -1,0 +1,545 @@
+/* Inputs */
+form div {
+  display: inline-block;
+  margin: 50px;
+  position: relative;
+}
+
+form input {
+  width: 200px;
+  outline: none;
+  border: none;
+  border: 1px solid #BEBEBE;
+  border-radius: 2px;
+  padding: 5px;
+  margin: 0;
+  font-size: 16px;
+  color: #212529;
+  transition: all 0.2s ease;
+}
+
+form input:not(.checkbox):hover, form input:not(.checkbox):focus {
+  border: 1px solid #26A69A;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+form label {
+  position: absolute;
+  top: -18px;
+  font-size: 14px;
+  color: #212529;
+}
+
+.invalido {
+  border: 1px solid #FF1744;
+}
+
+.ocultar {
+  display: none;
+}
+
+.pHelp {
+  margin: 0 auto;
+}
+/*------------------------------------------*/
+
+.checkbox {
+  display: block;
+  margin-top: 15px;
+  font-size: 18px;
+  color: #212529;
+}
+
+.checkbox input {
+  transform: scale(1.2);
+}
+
+/*------------------------------------------*/
+
+/* Input checkbox */
+form input[type=checkbox] {
+  transform: scale(1.2);
+}
+/*------------------------------------------*/
+
+/* Selects */
+form select {
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  padding: 5px;
+  border: 1px solid #BEBEBE;
+  width: 212px;
+  height: 31.2px;
+  font-size: 16px;
+  color: #212529;
+  transition: all 0.2s ease;
+}
+
+form select:hover, form select:focus {
+  border: 1px solid #4285F4;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+/*------------------------------------------*/
+
+.mainCard {
+  text-align: center;
+  height: auto;
+  margin: 0 auto;
+  padding: 40px;
+  /* background-color: #c6c6c6; */
+  background-color: #26A69A;
+  margin-bottom: 50px;
+}
+
+.button {
+  color: #FFF;
+  font-size: 16px;
+  border: #BEBEBE;
+  border-radius: 2px;
+  outline: none;
+  background-color: #26A69A;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  width: 212px;
+  height: 31.2px;
+}
+
+.button:hover {
+  background-color: #00796B;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+/* Buttons */
+.extraButton {
+  width: 212px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background-color: #E0E0E0;
+  border: 1px solid #BEBEBE;
+  color: #212529;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.extraButton:hover {
+  background-color: #BEBEBE;
+  border: 1px solid #4285F4;
+}
+/*------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tables */
+section table {
+  display: inline-block;
+  position: relative;
+  margin: 30px 60px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+table tbody, table thead {
+  /* display: block; */
+}
+
+table tbody {
+  overflow: auto;
+  height: 100px;
+}
+
+section table thead tr {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+tr:nth-child(even) {
+  background-color: #b8ddda;
+}
+
+section table tbody td:nth-child(2) {
+  cursor: pointer;
+}
+
+section table tbody tr:hover {
+  background-color: #E0F2F1;
+  cursor: default;
+}
+
+section table thead th, section table tbody td {
+  width: 300px;
+  height: 30px;
+  padding: 5px;
+}
+
+section table th {
+  color: #26A69A;
+}
+
+section table td {
+  color: #212529;
+}
+
+.botonTabla {
+  color: #FFF;
+  border-radius: 2px;
+  padding: 5px;
+  margin: 5px;
+  border: none;
+  outline: none;
+  display: inline-block;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.botonEditar {
+  /* color: #AB47BC; */
+  background-color: #FF7043;
+}
+
+.botonEditar:hover {
+  /* color: #7B1FA2; */
+  background-color: #E64A19;
+}
+
+.botonActivar {
+  background-color: #26A69A;
+}
+
+.botonActivar:hover {
+  background-color: #00796B;
+}
+
+.botonDesactivar {
+  background-color: #FF1744;
+}
+
+.botonDesactivar:hover {
+  background-color: #D32F2F;
+}
+
+.botonEvaluar {
+  background-color: #29B6F6;
+}
+
+.botonEvaluar:hover {
+  background-color: #0288D1;
+}
+/*------------------------------------------*/
+
+/* Search bar */
+#topListSection {
+  position: relative;
+  display: inline;
+}
+
+.buscar {
+  width: 600px;
+  outline: none;
+  border: none;
+  border: 1px solid #BEBEBE;
+  border-radius: 2px;
+  padding: 10px 40px;
+  font-size: 18px;
+  color: #212529;
+  transition: all 0.2s ease;
+}
+
+.buscar:hover, .buscar:focus {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+
+
+.fa-search {
+  position: absolute;
+  top: 2px;
+  left: 12.5px;
+  color: #A8A8A8;
+}
+
+#topListButtons {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  margin-left: 10px;
+}
+
+#topListButtons button {
+  position: absolute;
+  top: -28px;
+  left: 50px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  width: 180px;
+  height: 43.6px;
+  color: #FFF;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-left: -50px;
+}
+
+#btnDesactivados {
+  background-color: #EF5350;
+}
+
+#btnDesactivados:hover {
+  background-color: #D32F2F;
+}
+
+#btnActivados {
+  background-color: #66BB6A;
+}
+
+#btnActivados:hover {
+  background-color: #388E3C;
+}
+/*------------------------------------------*/
+
+#divRatingMain {
+  position: absolute;
+  right: 150px;
+  top: 395px;
+}
+
+#rating {
+  text-align: center;
+  letter-spacing: 1px;
+  background-color: #DDD;
+  border-radius: 5px;
+  padding: 5px;
+  display: inline-block;
+}
+
+.fa-star {
+  font-size: 14px;
+}
+
+#hotelRating, #comidaRating, #servicioRating, #habitacionRating, #infraestructuraRating, #limpiezaRating {
+  color: #E7711B;
+  display: inline-block;
+}
+
+#hotelRating2, #comidaRating2, #servicioRating2, #habitacionRating2, #infraestructuraRating2, #limpiezaRating2 {
+  color: #CCC;
+  display: inline-block;
+}
+
+#divRating {
+  text-align: left;
+  margin-bottom: 12.5px;
+}
+
+#divHotelRating {
+  margin-bottom: 25px;
+}
+
+#promedioGeneral {
+  color: #E7711B;
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#navLogo {
+  margin-top: 25px;
+  width: 140px;
+  height: 35px;
+}
+
+.hotelCard {
+  position: relative;
+  width: 600px;
+  height: 150px;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: #FFF;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #B0B4B7;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.2s ease;
+}
+
+.hotelCard:hover {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.hotelCard:hover {
+  cursor: pointer;
+}
+
+.hotelImagen {
+  display: inline-block;
+  width: 180px;
+  height: 160px;
+  float: left;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+#hotelImagenLink {
+  width: 200px;
+  height: 180px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+#hotelImagenLink:hover {
+  border-radius: 5px;
+  transform: scale(1.06);
+}
+
+.hotelInformacion {
+  text-align: left;
+}
+
+#hotelNombre {
+  color: #37454D;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+*::selection {
+  background-color: #B2DFDB;
+}
+
+.hotelEvaluar {
+  width: 100px;
+  height: 35px;
+  background-color: #26A69A;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  color: #FFF;
+  margin-top: 35px;
+  cursor: pointer;
+}
+
+.hotelEvaluar:hover {
+  background-color: #00796B;
+}
+
+h1 {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+.hotelDesactivar {
+  width: 20px;
+  height: 20px;
+  border: none;
+  outline: none;
+  background-color: #EF5350;
+  border-radius: 50%;
+  position: absolute;
+  left: 610px;
+  top: 15px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.hotelDesactivar:hover {
+  background-color: #D32F2F;
+}
+
+.hotelActivar {
+  width: 20px;
+  height: 20px;
+  border: none;
+  outline: none;
+  background-color: #66BB6A;
+  border-radius: 50%;
+  position: absolute;
+  left: 610px;
+  top: 15px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.hotelActivar:hover {
+  background-color: #388E3C;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 200px;
+  padding: 25px;
+  background-color: #FFF;
+  border: 1px solid #B0B4B7;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.2s ease;
+}

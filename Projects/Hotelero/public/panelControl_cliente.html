@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Hotelero | Panel</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_hotel.css">
+    <link rel="stylesheet" href="css/tooltip.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/swal.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/plantilla.css">
+    <link rel="stylesheet" href="css/estilosGenerales.css">
+    <link rel="stylesheet" href="css/style_panelCliente.css">
+    <link rel="icon" href="img/favicon.png">
+  </head>
+  <body>
+
+    <header>
+      <nav>
+        <ul>
+          <li><img id="navLogo" src="img/logo.png" alt=""></li>
+          <li id="btnLogout"><a href="#">Cerrar sesión</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+        <div class="mainCard">
+          <div id="topListSection">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Buscar" class="buscar" id="txtBuscar">
+          </div>
+          <div class="checkbox">
+            <label for="filtroAlfabetico">Ordenar alfabéticamente</label>
+            <input type="checkbox" id="filtroAlfabetico">
+          </div>
+        </div>
+
+        <section id="hotelList">
+
+        </section>
+
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content" id="scrollModal">
+                  <div class="close">
+                    <span>&times;
+                      <span>
+                  </div>
+
+                  <div class="modal-body">
+
+                    <span id="lblNombre"></span>
+                    <div id="divImgHotel">
+                      <img src="" alt="" id="imgHotel">
+                    </div>
+
+                    <div id="mapaHotel"></div>
+
+                    <div id="informacion">
+                      <div><label class="lblMain"><img src="img/phone.png" alt="phone-servicio" class="smallImg">Teléfono servicio al cliente: </label><label id="lblTelefonoServicio"></label></div>
+                      <div><label class="lblMain"><img src="img/email.png" alt="email-servicio" class="smallImg">Correo servicio al cliente: </label><label id="lblCorreoServicio"></label></div>
+
+                      <div id="divReservacion"><label class="lblMain"><img src="img/phone.png" alt="telefono-reservacion" class="smallImg">Teléfono reservación: </label><label id="lblTelefonoReservacion"></label></div>
+                      <div><label class="lblMain"><img src="img/email.png" alt="email-reservacion" class="smallImg">Correo reservación: </label><label id="lblCorreoReservacion"></label></div>
+
+                      <div id="divUbicacion"><label class="lblMain"><img src="img/location.png" alt="ubicacion" class="smallImg">Ubicación: </label><label id="lblUbicacion"></label></div>
+                      <div><label class="lblMain"><img src="img/location.png" alt="ubicacion" class="smallImg">Dirección: </label><label id="lblDireccion"></label></div>
+                    </div>
+
+                    <div id="divRatingMain">
+                      <div id="divRating">
+                        <p id="comidaRating" class="rating"></p><p id="comidaRating2" class="rating"></p>
+                      </div>
+
+                      <div id="divRating">
+                        <p id="servicioRating" class="rating"></p><p id="servicioRating2" class="rating"></p>
+                      </div>
+
+                      <div id="divRating">
+                        <p id="habitacionRating" class="rating"></p><p id="habitacionRating2" class="rating"></p>
+                      </div>
+
+                      <div id="divRating">
+                        <p id="infraestructuraRating" class="rating"></p><p id="infraestructuraRating2" class="rating"></p>
+                      </div>
+
+                      <div id="divRating">
+                        <p id="limpiezaRating" class="rating"></p><p id="limpiezaRating2" class="rating"></p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+
+
+        <div>
+
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/jquery.cloudinary/1.0.18/jquery.cloudinary.js' type='text/javascript'></script>
+    <script src="https://widget.cloudinary.com/global/all.js" type="text/javascript"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDECsujZJTZAHhvpfnjH6j3C3g78s_y4JA&callback=initMap"></script>
+    <script src="js/fotografiaHotel.js"></script>
+    <script src="js/servicio_iniciarSesion.js"></script>
+    <script src="js/servicio_evaluacion.js"></script>
+    <script src="js/servicio_usuario.js"></script>
+    <script src="js/servicio_hotel.js"></script>
+    <script src="js/controlador_panelCliente.js"></script>
+    <script src="js/modal.js"></script>
+  </body>
+</html>

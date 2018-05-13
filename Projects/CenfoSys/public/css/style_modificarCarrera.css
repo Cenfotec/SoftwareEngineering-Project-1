@@ -1,0 +1,17 @@
+/* Input checkbox */
+#lblAcreditada {
+  width: 150px;
+}
+
+#txtAcreditacion {
+  width: 20px;
+}
+
+#divCheckbox {
+  position: absolute;
+}
+/*------------------------------------------*/
+
+#sltGradoAcademico {
+  width: 260px;
+}

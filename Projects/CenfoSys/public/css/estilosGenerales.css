@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #F2F2F2;
+  overflow: hidden;
+}
+
+/* Estilos del header */
+
+header{
+  background-color: #a32068;
+  background-image: linear-gradient(135deg,#a32068,#2e368f);
+  height: 90px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+nav {
+  display: inline-block
+}
+
+header nav img {
+  display: inline-block;
+  margin: 8px 20px;
+  transform: scale(0.85);
+}
+
+header nav ul {
+  margin: 0 auto;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav ul li {
+  list-style: none;
+  color: #FFF;
+  font-size: 18px;
+  margin-top: -55px;
+  margin-right: 15px;
+  padding: 2px;
+}
+
+header nav ul li #tituloPrincipal {
+  position: absolute;
+  margin-top: -98px;
+  left: 30%;
+  font-size: 22px;
+  padding: 27px;
+  width: 600px;
+  text-align: center;
+}
+
+
+header nav ul li #nombreSesion {
+  position: absolute;
+  top: 35px;
+  right: 13.5%;
+  font-size: 18px;
+}
+
+header nav ul li #sesionDerecha {
+  position: absolute;
+  top: 22.5px;
+  right: 10%;
+  transform: scale(1.4);
+  text-align: center;
+  padding: 10px;
+  transition: all 0.2s ease;
+  border-radius: 50%;
+}
+
+header nav ul li #sesionDerecha:hover {
+  cursor: pointer;
+  background-color: #2E2B77;
+  padding: 10px;
+}
+
+header nav ul li #logoutDerecha {
+  position: absolute;
+  top: 12.8px;
+  right: 0.8%;
+  border-left: 1px solid #999999;
+  transform: scale(1.4);
+  text-align: center;
+  padding: 21.4px;
+  transition: all 0.2s ease;
+}
+
+header nav ul li #logoutDerecha:hover {
+  cursor: pointer;
+  background-color: #672B7C;
+}
+/*------------------------------------------*/
+
+/* Estilos del sidebar de la aplicacion */
+aside {
+  position: relative;
+  background-color: #9b216a;
+  width: 200px;
+  color: #fff;
+  height: 643px;
+  display: inline-block;
+  border-top: 1px solid #A1A1A1;
+  box-shadow: 10px 20px 20px rgba(0,0,0,0.19), 6px 6px 6px rgba(0,0,0,0.23);
+  text-align: justify;
+  float: left;
+}
+
+aside ul li a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 60px;
+  padding: 10px;
+}
+
+aside ul li a::selection {
+  background: transparent;
+}
+
+aside ul li {
+  transition: all 0.2s ease;
+}
+
+aside ul li:hover {
+  background-color: #672B7C;
+  cursor: pointer;
+}
+
+.activeAside {
+  background-color: #672B7C;
+}
+
+.ocultar {
+  display: none !important;
+}
+
+#CenfoSys {
+  position: absolute;
+  color: #DDD;
+  font-size: 13px;
+  top: 95%;
+  left: 4%;
+}
+/*------------------------------------------*/
+
+/* Estilos del main */
+#mainPrincipal {
+  margin: 10px 0px 10px 10px;
+  padding: 5px;
+  width: 84%;
+  height: 600px;
+  float: right;
+  overflow: auto;
+}
+/*------------------------------------------*/
+
+/* Estilos de la flecha */
+#flechaIzquierda {
+  display: inline-block;
+  padding: 20px;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+#flechaIzquierda:hover {
+  background-color: #E0E0E0;
+}
+
+#flechaIzquierda:active {
+  background-color: #BEBEBE;
+}
+
+#flechaIzquierda span {
+  color: #4285F4;
+}
+
+.fa-arrow-left {
+  transform: scale(2);
+}
+/*------------------------------------------*/
+
+/* Estilos del boton */
+#botonPrincipal {
+  display: inline-block;
+}
+
+#botonPrincipal button {
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  padding: 10px 50px;
+  background-color: #4285F4;
+  color: #FFF;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+  margin-left: 10px;
+}
+
+#botonPrincipal button:hover {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+/*------------------------------------------*/
+
+/* Estilos del footer */
+footer #footerWrapper {
+  background-color: #2F2F2F;
+  color: #CCCCCC;
+  font-size: 14px;
+  margin: 0 auto;
+  height: 50px;
+}
+
+footer #footerWrapper span:first-child {
+  float: left;
+  margin: 15px;
+}
+
+footer #footerWrapper span:last-child {
+  float: right;
+  margin: 15px;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar{
+  width: 8px;
+  opacity: 0.2;
+  border: none;
+}
+
+::-webkit-scrollbar-track{
+  background: #CCC;
+  border-radius: 25px;
+  transition: all 0.2s ease-in-out;
+}
+
+::-webkit-scrollbar-track:active {
+  background: #BEBEBE;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #4285F4;
+  border-radius: 25px;
+}
+
+/* Pseudo-clase */
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #CCC;
+}
+/*------------------------------------------*/

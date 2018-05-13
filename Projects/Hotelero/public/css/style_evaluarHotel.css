@@ -1,0 +1,35 @@
+#divImgHotel {
+  display: inline-block;
+  width: 240px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 5px;
+  float: left;
+}
+
+#imgHotel {
+  width: 240px;
+  height: 200px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+#imgHotel:hover {
+  border-radius: 5px;
+  transform: scale(1.06);
+}
+
+form {
+  width: 550px;
+  text-align: left;
+  float: right;
+}
+
+form div {
+  margin-top: 5px;
+  margin: 20px;
+}
+
+#btnEvaluar {
+  margin-left: 20px;
+}

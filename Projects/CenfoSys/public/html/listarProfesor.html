@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>CenfoSys | Profesores</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="../css/swal.css">
+  <link rel="stylesheet" href="../css/tooltip.css">
+  <link rel="stylesheet" href="../css/modal.css">
+  <link rel="stylesheet" href="../css/estilosGenerales.css">
+  <link rel="stylesheet" href="../css/plantilla.css">
+  <link rel="stylesheet" href="../css/style_listarProfesor.css">
+  <link rel="icon" href="../img/logoCenfoSysTab.png">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="">
+        <a href="#">
+          <img src="../img/logoBlanco.png" alt="Logo Cenfotec" width="180">
+        </a>
+      </div>
+      <ul>
+        <li>
+          <span id="tituloPrincipal">Lista de profesores</span>
+        </li>
+        <li>
+          <span id="nombreSesion"></span>
+          <span id="sesionDerecha">
+            <i class="fas fa-user"></i>
+          </span>
+        </li>
+        <li>
+          <span id="logoutDerecha">
+            <i class="fas fa-sign-out-alt"></i>
+          </span>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <aside class="">
+    <ul>
+      <li id="btnProfesores">
+        <a href="#">Profesores</a>
+      </li>
+      <li id="btnFuncionarios">
+        <a href="#">Funcionarios</a>
+      </li>
+      <li id="btnSedes">
+        <a href="#">Sedes</a>
+      </li>
+      <li id="btnCarreras">
+        <a href="#">Carreras</a>
+      </li>
+      <li id="btnCursosCarrera">
+        <a href="#">Cursos de Carrera</a>
+      </li>
+      <li id="btnCursosActualizacion">
+        <a href="#">Cursos de Actualización</a>
+      </li>
+      <li id="btnEvaluaciones">
+        <a href="#">Evaluaciones</a>
+      </li>
+      <li id="btnPeriodos">
+        <a href="#">Periodos</a>
+      </li>
+      <li id="btnAsociaciones">
+        <a href="#">Asociaciones</a>
+      </li>
+      <span id="CenfoSys">CenfoSys®</span>
+    </ul>
+  </aside>
+
+  <main id="mainPrincipal">
+    <section>
+      <div id="flechaIzquierda">
+        <span>
+          <i class="fas fa-arrow-left"></i>
+          <span>
+      </div>
+    </section>
+
+    <section class="formSection">
+      <div class="formTitle">
+        <span class="formType">Profesor</span>
+        <span class="formAction">Lista de profesores</span>
+      </div>
+
+      <div id="topListSection">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Buscar" class="buscar" id="txtBuscar">
+        <div id="topListButtons">
+          <button type="button" id="btnDesactivados" class="boton botonNormal">VER DESACTIVADOS</button>
+          <button type="button" id="btnActivados" class="boton botonNormal">VER ACTIVADOS</button>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <table id="tblProfesores">
+        <thead>
+          <tr>
+            <th>Opciones</th>
+            <th>Identificación</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Correo electrónico</th>
+            <th>Teléfono</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </section>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content" id="scrollModal">
+        <div class="close">
+          <span>&times;
+            <span>
+        </div>
+
+        <div class="modal-body">
+
+          <div id="divImgPerfil">
+            <img src="http://res.cloudinary.com/pbonillag/image/upload/.png" alt="" id="imgPerfil">
+          </div>
+
+          <section id="topInformation">
+            <div>
+              <label class="lblNombre" id="lblNombre"></label>
+            </div>
+            <div>
+              <img src="../img/professional.png" alt="professional" id="imgProfessional">
+              <label class="topInformationStyle">Profesor</label>
+            </div>
+            <div>
+              <img src="../img/location.png" alt="residencia" id="imgLocation">
+              <label class="topInformationStyle" id="lblResidencia"></label>
+            </div>
+            <div>
+              <img src="../img/email.png" alt="email-primario" id="imgEmail">
+              <label class="topInformationStyle" id="lblEmailP"></label>
+            </div>
+            <div>
+              <img src="../img/phone.png" alt="telefono-primario" id="imgPhone">
+              <label class="topInformationStyle" id="lblTelefonoP"></label>
+            </div>
+            <div id="divRating">
+              <p id="profesorRating" class="rating"></p>
+              <p id="profesorRating2" class="rating"></p>
+              <p id="promedioGeneral"></p>
+            </div>
+          </section>
+
+          <section id="selectInformation">
+            <div id="divPersonal" class="selectInformationActive">
+              <span>
+                <img src="../img/personal.png" alt="personal" id="imgPersonal"> Personal</span>
+            </div>
+            <div id="divProfessional" class="selectInformationInactive">
+              <span>
+                <img src="../img/professional.png" alt="professional" id="imgProfessional"> Profesional</span>
+            </div>
+          </section>
+
+          <section id="middleInformation">
+            <div id="personalInformation">
+              <div>
+                <label class="firstLabel">
+                  <img src="../img/id.png" alt="id" id="imgID">ID: </label>
+                <label id="lblIdentificacion"></label>
+              </div>
+              <div>
+                <label class="firstLabel">
+                  <img src="../img/email.png" alt="email-secundario" id="imgEmail">E-Mail: </label>
+                <label id="lblEmailS"></label>
+              </div>
+              <div>
+                <label class="firstLabel">
+                  <img src="../img/phone.png" alt="telefono-secundario" id="imgPhone">Teléfono: </label>
+                <label id="lblTelefonoS"></label>
+              </div>
+              <div>
+                <label class="firstLabel">
+                  <img src="../img/phone.png" alt="telefono-emergencia" id="imgPhone">Emergencia: </label>
+                <label id="lblContactoEmergencia" class="importante"></label>
+              </div>
+              <div>
+                <label class="firstLabel">
+                  <img src="../img/home.png" alt="direccion-exacta" id="imgLocation">Residencia: </label>
+                <label id="lblDireccionExacta"></label>
+              </div>
+              <div>
+                <label class="firstLabel">
+                  <img src="../img/language.png" alt="idioma" id="imgLanguage">Idiomas: </label>
+                <label id="lblIdiomas"></label>
+              </div>
+            </div>
+            <div id="professionalInformation" class="ocultar">
+              <div>
+                <label class="firstLabel">Trabajo: </label>
+                <label id="lblLugarTrabajo"></label>
+              </div>
+              <div>
+                <label class="firstLabel">Exp. Laboral: </label>
+                <label id="lblAnosExperienciaLaboral"></label>
+              </div>
+              <div>
+                <label class="firstLabel">Exp. Docente: </label>
+                <label id="lblAnosExperienciaDocenteUniversitario"></label>
+              </div>
+              <div>
+                <label class="firstLabel">Capacitación virtual: </label>
+                <label id="lblCapacitacionVirtual"></label>
+              </div>
+              <div>
+                <label class="firstLabel">Capacitación docente: </label>
+                <label id="lblCapacitacionDocente"></label>
+              </div>
+              <div>
+                <label class="firstLabel">Nivel de inglés: </label>
+                <label id="lblNivelIngles"></label>
+              </div>
+              <div>
+                <label class="firstLabel">Grado académico: </label>
+                <label id="lblGradoAcademico"></label>
+              </div>
+              <div>
+                <label class="firstLabel">Enfermedades: </label>
+                <label id="lblEnfermedades"></label>
+              </div>
+              <div>
+                <label class="firstLabel">Observaciones: </label>
+                <label id="lblObservaciones"></label>
+              </div>
+
+              <div id="divDisponibilidad">
+                <span id="disponibilidadTitle">Disponibilidad</span>
+                <div>
+                  <label class="firstLabel">Lunes: </label>
+                  <label id="lblLunes"></label>
+                </div>
+                <div>
+                  <label class="firstLabel">Martes: </label>
+                  <label id="lblMartes"></label>
+                </div>
+                <div>
+                  <label class="firstLabel">Miércoles: </label>
+                  <label id="lblMiercoles"></label>
+                </div>
+                <div>
+                  <label class="firstLabel">Jueves: </label>
+                  <label id="lblJueves"></label>
+                </div>
+                <div>
+                  <label class="firstLabel">Viernes: </label>
+                  <label id="lblViernes"></label>
+                </div>
+                <div>
+                  <label class="firstLabel">Sábado: </label>
+                  <label id="lblSabado"></label>
+                </div>
+              </div>
+            </div>
+
+
+        </div>
+        <section id="sectionTablas">
+            <div id="scrollTablaCarreras">
+            <p class="pHelp">Cursos de carrera asignados</p>
+            <table id="tblPeriodosAsociados" class="table">
+              <thead>
+                <tr>
+                  <th>Cursos</th>
+                  <th>Cuatrimestre</th>
+                  <th>Año</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+          <!-- Tabla de cursos actii -->
+          <div id="scrollTablaCarreras">
+              <p class="pHelp">Cursos de actualización asignados</p>
+            <table id="tblCursosActiiAsignados" class="table">
+              <thead>
+                <tr>
+                  <th>Curso de actualización</th>
+                  <th>Inicio</th>
+                  <th>Fin</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+          <!-- Tabla de sedes asociadas -->
+          <div id="scrollTablaCarreras">
+            <p class="pHelp">Sedes asociadas</p>
+            <table id="tblSedesAsociadas" class="table">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Tipo</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+          <!-- Tabla evaluaciones -->
+          <div id="scrollTablaCarreras">
+              <p class="pHelp">Historial de evaluaciones</p>
+            <table id="tblEvaluaciones" class="table">
+              <thead>
+                <tr>
+                  <th>Periodo</th>
+                  <th>Curso</th>
+                  <th>Nota</th>
+                  <th>Observaciones</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Tabla certificaciones -->
+          <div id="scrollTablaCarreras">
+              <p class="pHelp">Certificaciones</p>
+            <table id="tblCertificaciones" class="table">
+              <thead>
+                <tr>
+                  <th>Código</th>
+                  <th>Nombre</th>
+                  <th>Fecha</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+
+
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="../js/servicio_iniciarSesion.js"></script>
+  <script src="../js/panelControl_handler.js"></script>
+  <script src="../js/servicio_registrarProfesor.js"></script>
+  <script src="../js/navActions.js"></script>
+  <script src="../js/servicio_Sede.js"></script>
+  <script src="../js/servicio_periodos.js"></script>
+  <script src="../js/servicio_funcionarios.js"></script>
+  <script src="../js/servicio_cursos.js"></script>
+  <script src="../js/servicio_modificarProfesor.js"></script>
+  <script src="../js/servicio_listarProfesor.js"></script>
+  <script src="../js/servicio_registrarCertificacion.js"></script>
+  <script src="../js/servicio_registrarEvaluacion.js"></script>
+  <script src="../js/controlador_registrarProfesor.js"></script>
+  <script src="../js/controlador_listarProfesor.js"></script>
+  <script src="../js/modal_listarProfesor.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</body>
+
+</html>

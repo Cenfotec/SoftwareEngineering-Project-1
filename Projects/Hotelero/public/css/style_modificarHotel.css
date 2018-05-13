@@ -1,0 +1,53 @@
+/* Mapa */
+#mapaHotel {
+    margin: 0px 0px 50px 1px;
+    width: 500px;
+    height: 300px;
+    border: 1px solid #BEBEBE;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    animation: grande 1s ease;
+}
+
+@keyframes grande {
+    0% {
+        transform: scale(0);
+    }
+    10% {
+        transform: scale(1);
+    }
+}
+/*------------------------------------------*/
+
+#divMapaHotel {
+  margin-left: 500px;
+  margin-top: 725px;
+}
+
+.card {
+  position: absolute;
+  left: 50%;
+  top: 105% !important;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 1000px !important;
+  padding: 25px;
+  background-color: #FFF;
+  border: 1px solid #B0B4B7;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.2s ease;
+}
+
+.card form {
+  margin-left: 80px;
+}
+
+#btnActualizar {
+  position: absolute;
+  margin-left: 400px;
+  margin-bottom: 25px;
+  top: 1250px;
+  left: 250px;
+}

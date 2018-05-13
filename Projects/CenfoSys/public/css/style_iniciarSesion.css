@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.ocultar{
+  display: none;
+}
+
+main{
+    background-image:  url("../img/fondo.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color : #636363;
+    background-blend-mode: overlay;
+    height: 100vh;
+}
+
+.iniciar{
+    background-color: #F2F2F2;
+    border-radius: 2px;
+    height: 100vh;
+    width: 460px;
+    margin: 0 auto;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+  .iniciar h1{
+      font-weight: lighter;
+      text-align: center;
+      margin-bottom: 25px;
+      padding-top: 20px;
+      padding-bottom: 10px;
+      font-size: 1.2em;
+      color: #463561;
+  }
+
+form {
+    margin-left: 40px;
+}
+  form input {
+      font-family: 'Roboto';
+      margin-bottom: 40px;
+      border-radius: 2px;
+      border: none;
+      outline: none;
+      background-color: #DDD;
+      padding: 10px;
+      width: 330px;
+      color: gray;
+      font-size: 20px;
+  }
+  form label {
+      left: 0;
+      font-size: 22.5px;
+      color: gray;
+      font-weight: lighter;
+  }
+#btnIniciar {
+    padding: 10px;
+    background-color: #0B7A52;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: lighter;
+    width: 350px;
+    margin-top: 17px;
+    border-radius: 2px;
+    top: 400px;
+    left: 592.5px;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+  #btnIniciar:hover{
+      background-color: #0a6644;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+
+
+p{
+    color: gray;
+    margin: 20px 100px;
+    font-size: 15px;
+}
+
+p:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Swal Design */
+.swal-modal {
+  background-color: #FFF;
+  border: 1px solid #BEBEBE;
+  border-radius: 2px;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  text-align: left;
+  padding-left: 24px;
+}
+
+.swal-footer {
+  height: 36px;
+  margin: 16px;
+  padding: 0;
+}
+
+.swal-title {
+  text-align: left;
+  font-size: 24px;
+  color: #212121;
+  font-weight: bold;
+  cursor: default;
+  margin: 0;
+  padding: 0;
+}
+
+.swal-text {
+  text-align: left;
+  color: gray;
+  cursor: default;
+  margin: 0;
+  padding: 0;
+}
+
+.swal-button--confirm {
+  color: #4285F4;
+}
+
+.swal-button--confirm:hover {
+  background-color: #E0E0E0;
+}
+
+.swal-button--confirm:active {
+  background-color: #BEBEBE;
+}
+
+.swal-button--cancel {
+  color: #EF5350;
+}
+
+.swal-button--cancel:hover {
+  background-color: #E0E0E0;
+}
+
+.swal-button--cancel:active {
+  background-color: #BEBEBE;
+}
+
+.swal-button {
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: transparent;
+  font-size: 16px;
+  margin: 0;
+  padding: 10px 15px;
+}
+
+.swal-button:focus {
+  display: none;
+}
+/*------------------------------------------*/
+
+
+/* Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #FFF;
+  margin: 3% auto;
+  padding: 0;
+  border: 1px solid #BEBEBE;
+  border-radius: 2px;
+  width: 50%;
+  margin-top: 10%;
+  height: 55%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: modalAnimation;
+  animation-duration: 0.4s;
+  text-align: center;
+}
+
+/* The Close Button */
+.close {
+position: absolute;
+padding: 0.5px;
+font-size: 25px;
+border-radius: 50%;
+transform: scale(2.5);
+transition: all 0.2s ease;
+cursor: pointer;
+left: 94.5%;
+top: 20px;;
+width: 21.33px;
+height: 21.33px;
+}
+
+.close span {
+color: #4285F4;
+}
+
+/* Modal Body */
+.modal-body {
+padding: 15px 16px;
+color: #9E2169;
+}
+
+#modalHeader {
+color: #4C4C4C;
+}
+
+/* Modal Animation */
+@keyframes modalAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/*------------------------------------------*/
+
+.lblNombre{
+font-size: 22px;
+color: #141414;
+font-weight: bold;
+margin-top: 15px;
+margin-bottom: 5px;
+}
+
+
+/* Estilos generales del modal */
+
+#imgPassword{
+  position: absolute;
+  width: 35px;
+  top: 30px;
+  left: 28%;
+  padding-right: 20px;
+}
+
+#topInformation{
+  margin: 0 auto;
+  margin-top: 10px;
+  display: block;
+  width: 50%;
+  padding: 10px;
+  border-bottom: 1px solid #CCC;
+  width: 600px;
+}
+
+#divCorreo{
+  margin-top: 75px;
+}
+
+#correo{
+  font-size: 20px;
+  color: black;
+  top: 230px;
+  left: 34%;
+  position: absolute;
+}
+
+#contrasennaNueva{
+  font-size: 20px;
+  color: black;
+  top: 80px;
+  width: 235px;
+  left: 25%;
+  position: absolute;
+}
+
+#id{
+  font-size: 20px;
+  color: black;
+}
+
+#selectInformation{
+  margin-top: 35px;
+}
+#txtId2{
+  font-family: 'Roboto';
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  background-color: #DDD;
+  padding: 10px;
+  width: 240px;
+  color: gray;
+  font-size: 20px;
+  margin-top: 13px;
+}
+
+#txtCorreo{
+  font-family: 'Roboto';
+  margin-bottom: 20px;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  background-color: #DDD;
+  padding: 10px;
+  width: 240px;
+  color: gray;
+  font-size: 20px;
+}
+
+#btnSolicitar{
+  padding: 10px;
+  background-color: #0B7A52;
+  color: white;
+  border: none;
+  font-size: 20px;
+  font-weight: lighter;
+  width: 250px;
+  margin-top: 30px;
+  border-radius: 2px;
+  top: 300px;
+  position: absolute;
+  left: 255px;
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#btnSolicitar:hover{
+  background-color: #0a6644;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#pContraNueva{
+  text-decoration: none;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    top: 150px;
+    left: 20%;
+}

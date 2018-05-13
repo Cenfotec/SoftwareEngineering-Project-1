@@ -1,0 +1,175 @@
+/* Plantilla */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background-image: url('../img/fondoGeneral.png');
+  background-size: 100% 100%;
+}
+
+html {
+  height: 100%;
+}
+
+
+/* Container Principal */
+#container {
+  margin: 2.45%;
+  background-color: #FFF;
+  padding: 2%;
+  height: 468px;
+  width: 90%;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  overflow: auto;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+/*------------------------------------------*/
+
+
+/* Estilo de boton */
+
+.boton {
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    color: #FFF;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px 25px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.botonNormal {
+    outline: none;
+    border: none;
+    background-color: #31358E;
+}
+
+.botonNormal:hover {
+    background-color: #2a2d72;
+}
+
+#btnGuardar {
+    position: absolute;
+    right: 280px;
+    bottom: 200px;
+}
+
+
+/* ------------------------------------------------ */
+
+
+/* Inputs & Labels */
+
+form {
+    position: relative;
+}
+
+form div {
+    position: absolute;
+}
+
+form select:hover {
+    border-bottom: solid 1px rgb(207, 207, 207);
+    cursor: pointer;
+}
+
+form .input {
+    border: none;
+    outline: none;
+    margin: 30px;
+    margin-top: 10px;
+    background-color: transparent;
+    border-bottom: 1px solid #9E2169;
+    color: grey;
+    font-size: 16px;
+}
+
+form label {
+    font-size: 18px;
+    color: #9E2169;
+}
+
+#nombreCarrera {
+    left: 450px;
+    top: 10px;
+    width: 390px;
+}
+
+#txtNombreCarrera {
+    width: 340px;
+}
+
+#codigoCarrera {
+    top: 10px;
+    width: 250px;
+}
+
+#gradoAcademico {
+    font-size: 18px;
+    right: 100px;
+    top: 10px;
+    width: 290px;
+}
+
+#numeroCreditos {
+    top: 100px;
+    width: 160px;
+    left: 40px;
+}
+
+#nCreditos {
+    width: 95px;
+    text-align: center;
+
+}
+
+#versionCarrera {
+    top: 100px;
+    left: 540px;
+    width: 200px;
+}
+
+#txtVersion {
+    width: 150px;
+    margin-left: 12px;
+    padding-left: 15px;
+    text-align: left;
+}
+
+#checkboxAcreditacion {
+    right: 150px;
+    top: 250px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#txtAcreditacion {
+    cursor: pointer;
+}
+
+.invalido {
+    background-color: transparent;
+    border: 1px solid #D32F2F;
+    margin: 20px;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 2px;
+    color: grey;
+    font-size: 16px;
+}
+
+
+/* ------------------------------------------- */

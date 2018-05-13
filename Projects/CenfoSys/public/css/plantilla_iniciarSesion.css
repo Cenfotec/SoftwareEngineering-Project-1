@@ -1,0 +1,255 @@
+/* Plantilla */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Container Principal */
+#container {
+  margin: 8% 3% 0 3%;
+  background-color: #FFF;
+  padding: 2%;
+  height: 492px;
+  width: 90%;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+/*------------------------------------------*/
+
+/* Boton */
+.botonTabla {
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-size: 12px;
+  font-family: 'Raleway', sans-serif;
+  padding: 4px 15px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.botonTabla:first-child {
+  margin-right: 25px;
+}
+
+
+.boton {
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.boton:hover, .botonTabla:hover {
+  cursor: pointer;
+}
+
+.botonNormal {
+  outline: none;
+  border: none;
+  background-color: #31358E;
+}
+
+.botonNormal:hover {
+  background-color: #2a2d72;
+}
+
+
+.botonActivar {
+  outline: none;
+  border: none;
+  background-color: #0B7A52;
+}
+
+.botonActivar:hover {
+  background-color: #0a6644;
+}
+
+
+.botonDesactivar {
+  outline: none;
+  border: none;
+  background-color: #D32F2F;
+}
+
+.botonDesactivar:hover {
+  background-color: #b22929;
+}
+/*------------------------------------------*/
+
+/* Buscar Container */
+.buscarContainer {
+  position: relative;
+}
+
+.buscar {
+  width: 500px;
+  height: 30px;
+  padding: 2px 5px 2px 50px;
+  border: 1px solid #9E2169;
+  outline: none;
+  font-size: 18px;
+  color: grey;
+  font-style: 'Raleway', sans-serif;
+}
+
+.fa-search {
+  position: absolute;
+  top: 12px;
+  left: 29.5%;
+  color: grey;
+}
+/*------------------------------------------*/
+
+
+
+
+
+/* Inputs & Labels */
+form {
+  position: relative;
+}
+form input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid #9E2169;
+  width: 100px;
+  color: grey;
+  font-size: 14px;
+}
+
+form label {
+  position: absolute;
+  top: -5px;
+  font-size: 12px;
+  color: #9E2169;
+}
+/*------------------------------------------*/
+
+
+
+
+
+
+
+
+
+/* Inputs & Labels */
+table {
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  color: #4C4C4C;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #F2F2F2;
+}
+
+tr:hover {
+  background-color: #DDD;
+  cursor: default;
+}
+
+th, td {
+  padding: 10px 80px;
+  border: 1px solid #DDD;
+}
+
+th:first-child, td:first-child {
+  padding: 10px 25px;
+}
+
+
+th {
+  background-color: #85C242;
+  font-size: 18px;
+  letter-spacing: 1.2px;
+}
+
+td {
+  font-size: 16px;
+}
+
+/*------------------------------------------*/
+
+
+
+
+
+
+
+
+/* Radio Check */
+.radioContainer {
+  position: relative;
+  margin: 10px;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+input[type=radio] + label {
+  cursor: pointer;
+  transform: scale(1.4);
+  padding: 20px;
+}
+
+input[type=radio]:first-child + label {
+  margin-left: 60%;
+}
+
+input[type=radio] + label::selection {
+  background-color: transparent;
+}
+
+input[type=radio] + label::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #463561;
+  top: 3px;
+  margin-right: 5px;
+  transition: all 5s ease animateCheckbox;
+    transform: scale(1.4);
+}
+
+input[type=radio]:checked + label::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #463561;
+  animation: animateCheckbox 0.5s;
+    transform: scale(1.4);
+}
+
+@keyframes animateCheckbox {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.6);
+  }
+  100% {
+    transform: scale(1.4);
+  }
+}
+/*------------------------------------------*/
+
+/* \2714 */

@@ -1,0 +1,478 @@
+/* Plantilla */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-image: url('../img/fondoGeneral.png');
+    background-size: 100% 100%;
+}
+
+html {
+    height: 100%;
+}
+
+
+/* Container Principal */
+
+#container {
+    margin: 2.45%;
+    background-color: #FFF;
+    padding: 2%;
+    height: 468px;
+    width: 90%;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+/*------------------------------------------*/
+
+
+/* Boton */
+
+.botonTabla {
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    color: #FFF;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    padding: 4px 15px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.botonTabla:first-child {
+    margin-right: 10px;
+}
+
+.botonTabla:last-child {
+    margin-left: 10px;
+}
+
+.boton {
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    color: #FFF;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px 25px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.boton:hover,
+.botonTabla:hover {
+    cursor: pointer;
+}
+
+.botonNormal {
+    outline: none;
+    border: none;
+    background-color: #31358E;
+}
+
+.botonNormal:hover {
+    background-color: #2a2d72;
+}
+
+.botonActivar {
+    outline: none;
+    border: none;
+    background-color: #0B7A52;
+}
+
+.botonActivar:hover {
+    background-color: #0a6644;
+}
+
+.botonDesactivar {
+    outline: none;
+    border: none;
+    background-color: #D32F2F;
+}
+
+.botonDesactivar:hover {
+    background-color: #b22929;
+}
+
+
+/*------------------------------------------*/
+
+
+/* Buscar Container */
+
+.buscarContainer {
+    position: relative;
+}
+
+.buscar {
+    width: 500px;
+    height: 30px;
+    padding: 2px 5px 2px 50px;
+    border: 1px solid grey;
+    outline: none;
+    font-size: 18px;
+    color: grey;
+    font-style: 'Raleway', sans-serif;
+}
+
+.buscar:focus {
+    border: 1px solid #9E2169;
+}
+
+.fa-search {
+    position: absolute;
+    top: 12px;
+    left: 28.5%;
+    color: grey;
+}
+
+
+/*------------------------------------------*/
+
+
+/* Inputs & Labels */
+
+form {
+    position: relative;
+}
+
+.input {
+    border: none;
+    outline: none;
+    margin: 30px;
+    margin-top: 50px;
+    background-color: transparent;
+    border-bottom: 1px solid #9E2169;
+    width: 230px;
+    color: grey;
+    font-size: 15px;
+}
+
+form label {
+    font-size: 20px;
+    color: #9E2169;
+}
+
+.invalido {
+    border: 1px solid #D32F2F;
+    border-radius: 2px;
+}
+
+
+/*------------------------------------------*/
+
+
+/* Radio Check */
+
+.radioContainer {
+    position: relative;
+    margin: 10px;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+input[type=radio]+label {
+    cursor: pointer;
+    transform: scale(1.4);
+    padding: 20px;
+}
+
+input[type=radio]:first-child+label {
+    margin-left: 60%;
+}
+
+input[type=radio]+label::selection {
+    background-color: transparent;
+}
+
+input[type=radio]+label::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #463561;
+    top: 3px;
+    margin-right: 5px;
+    transition: all 5s ease animateCheckbox;
+    transform: scale(1.4);
+}
+
+input[type=radio]:checked+label::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #463561;
+    animation: animateCheckbox 0.5s;
+    transform: scale(1.4);
+}
+
+@keyframes animateCheckbox {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.6);
+    }
+    100% {
+        transform: scale(1.4);
+    }
+}
+
+
+/*------------------------------------------*/
+
+
+/* Modal (fondo) */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    position: relative;
+    background-color: #F2F2F2;
+    margin: 5% auto;
+    padding: 0;
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 80%;
+    height: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: modalAnimation;
+    animation-duration: 0.4s
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #D32F2F;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    left: 97%;
+    top: 0;
+}
+
+.close:hover,
+.close:focus {
+    color: #B22929;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Modal Header */
+
+.modal-header {
+    padding: 30px 15px;
+    color: white;
+    border-bottom: 1px solid #bcbfd8;
+}
+
+
+/* Modal Body */
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+
+/* Modal Animation */
+
+@keyframes modalAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    50% {
+        opacity: 0.8;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/*------------------------------------------*/
+
+
+
+/* Pantilla de estilos de tablas */
+
+h3 {
+    font-size: 16px;
+    color: #9E2169;
+}
+
+#asociarSedes h3 {
+    width: 280px;
+}
+
+.fa-search {
+    position: absolute;
+    top: 42px;
+    left: 10%;
+    color: grey;
+}
+
+tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+tr:hover {
+    background-color: #DDD;
+    cursor: default;
+}
+
+th,
+td {
+    width: 200px;
+    height: 25px;
+    border: 1px solid #DDD;
+    padding: 0px;
+}
+
+th:first-child,
+td:first-child {
+    width: 30px;
+    height: 25px;
+}
+
+th {
+    background-color: #85C242;
+    font-size: 15px;
+    letter-spacing: 1.2px;
+}
+
+td {
+    font-size: 15px;
+}
+
+.buscarTablas {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.botonNormalTabla {
+    outline: none;
+    border: none;
+    background-color: #31358E;
+}
+
+.botonNormalTabla:hover {
+    background-color: #2a2d72;
+}
+
+table {
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    color: #4C4C4C;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td,
+.celda {
+    width: 100px;
+}
+
+#costoActi{
+  position: absolute;
+  height: 16px;
+  left: 600px;
+  top: 110px;
+}
+#codigoActi{
+  position: absolute;
+  height: 16px;
+  left: 600px;
+  top: 0px;
+}
+#nombreActi{
+  position: absolute;
+  height: 20px;
+  left: 600px;
+  top: 50px;
+}
+
+#asociarSedes {
+  position: absolute;
+  right: -600px;
+  top: 50px;
+}
+#horasActi{
+  position: absolute;
+  height: 16px;
+  left: 600px;
+  top: 180px;
+}
+
+#scrollTablaSedes {
+  height: 150px;
+  width: 400px;
+  overflow: auto;
+  left: 5px;
+}
+
+#asociarProfesor {
+  position: absolute;
+  right: -140px;
+  top: 50px;
+}
+
+#scrollTablaProfesores {
+  height: 140px;
+  width: 400px;
+  overflow: auto;
+  left: 5px;
+}
+
+#btnActualizar{
+  position: absolute;
+  bottom: -360px;
+}
+#txtCantidad{
+  width: 150px;
+  text-align: center;
+}
+#txtNombre{
+  width: 240px;
+}
+#nCosto{
+  text-align: center;
+  width: 260px;
+}
+#txtCodigo{
+  width: 245px;
+  text-align: center;
+}

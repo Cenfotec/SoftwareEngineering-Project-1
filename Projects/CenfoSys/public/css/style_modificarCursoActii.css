@@ -1,0 +1,537 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #F2F2F2;
+}
+
+
+/* Navigation Bar */
+
+nav {
+  background-color: #463561;
+  width: 100%;
+  height: 80px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+nav img {
+  width: 9%;
+  height: 9%;
+  margin: 10px 100px;
+}
+
+nav ul {
+  margin: 0 auto;
+  position: relative;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li {
+  list-style: none;
+  color: #FFF;
+  font-size: 18px;
+  margin-top: -55px;
+  margin-right: 15px;
+  padding: 2px;
+}
+
+nav ul li #flechaIzquierda {
+  float: left;
+  position: absolute;
+  top: 10.7px;
+  left: 12px;
+  transform: scale(1.4);
+  border-right: 1px solid #382B4C;
+  padding: 18.59px;
+  background-color: #523C72;
+}
+
+nav ul li #flechaIzquierda:hover {
+  cursor: pointer;
+}
+
+nav ul li #tituloPrincipal {
+  position: absolute;
+  left: 35%;
+  font-size: 22px;
+  padding: 27px;
+  width: 400px;
+  text-align: center;
+}
+
+nav ul li #nombreSesion {
+  position: absolute;
+  top: 35px;
+  right: 13.5%;
+  font-size: 18px;
+  transition: all 0.3 ease;
+}
+
+nav ul li #sesionDerecha {
+  position: absolute;
+  top: 22.5px;
+  right: 10%;
+  transform: scale(1.4);
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50%;
+}
+
+nav ul li #sesionDerecha:hover {
+  cursor: pointer;
+  background-color: #382B4C;
+  padding: 10px;
+}
+
+nav ul li #logoutDerecha {
+  position: absolute;
+  top: 10.7px;
+  right: 0.8%;
+  transform: scale(1.4);
+  border-left: 1px solid #382B4C;
+  padding: 18.5px;
+  background-color: #523C72;
+}
+
+nav ul li #logoutDerecha:hover {
+  cursor: pointer;
+}
+/*------------------------------------------*/
+
+  form{
+    right: 600px;
+   display :block;
+   padding-top: 70px;/* Plantilla */
+   padding-left: 1100px;
+   font-size:70px;
+  }
+   * {
+     margin:0;
+     padding: 0;
+   }
+
+   html {
+     height: auto;
+   }
+
+   /* Container Principal */
+   #container {
+     margin: 2.45%;
+     background-color: #FFF;
+     padding: 2%;
+     height: 492px;
+     width: 90%;
+     border-radius: 15px;
+     text-align: center;
+     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+   }
+   /*------------------------------------------*/
+
+   /* Boton */
+   .botonTabla {
+     outline: none;
+     border: none;
+     border-radius: 2px;
+     color: #FFF;
+     font-size: 12px;
+     font-family: 'Raleway', sans-serif;
+     padding: 4px 15px;
+     transition: all 0.3s ease;
+     text-transform: uppercase;
+     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+   }
+
+   .botonTabla:first-child {
+     margin-right: 10px;
+   }
+
+   .botonTabla:last-child {
+     margin-left: 10px;
+   }
+
+
+   .boton {
+     outline: none;
+     border: none;
+     border-radius: 2px;
+     color: #FFF;
+     font-size: 18px;
+     font-family: 'Raleway', sans-serif;
+     padding: 10px 25px;
+     transition: all 0.3s ease;
+     text-transform: uppercase;
+     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+   }
+
+   .boton:hover, .botonTabla:hover {
+     cursor: pointer;
+   }
+
+   .botonNormal {
+     outline: none;
+     border: none;
+     background-color: #31358E;
+   }
+
+   .botonNormal:hover {
+     background-color: #2a2d72;
+   }
+
+
+   .botonActivar {
+     outline: none;
+     border: none;
+     background-color: #0B7A52;
+   }
+
+   .botonActivar:hover {
+     background-color: #0a6644;
+   }
+
+
+   .botonDesactivar {
+     outline: none;
+     border: none;
+     background-color: #D32F2F;
+   }
+
+   .botonDesactivar:hover {
+     background-color: #b22929;
+   }
+   /*------------------------------------------*/
+
+   /* Buscar Container */
+   .buscarContainer {
+     position: relative;
+   }
+
+   .buscar {
+     width: 500px;
+     height: 30px;
+     padding: 2px 5px 2px 50px;
+     border: 1px solid grey;
+     outline: none;
+     font-size: 18px;
+     color: grey;
+     font-style: 'Raleway', sans-serif;
+   }
+
+   .buscar:focus {
+     border: 1px solid #9E2169;
+   }
+
+   .fa-search {
+     position: absolute;
+     top: 12px;
+     left: 28.5%;
+     color: grey;
+   }
+   /*------------------------------------------*/
+
+
+
+
+
+   /* Inputs & Labels */
+   form {
+     position: relative;
+     margin-bottom: 20px;
+   }
+   form input {
+     border: none;
+     outline: none;
+     background-color: transparent;
+     border-bottom: 1px solid #9E2169;
+     width: 100px;
+     color: grey;
+     font-size: 55px;
+   }
+
+   form label {
+     font-size: 90px;
+     color: #9E2169;
+   }
+
+   .errorInput{
+     border-color: red;
+
+   }
+   /*------------------------------------------*/
+
+
+
+
+
+
+
+
+
+   /* Inputs & Labels */
+   table {
+     margin: 0 auto;
+     font-family: 'Roboto', sans-serif;
+     color: #4C4C4C;
+     border-collapse: collapse;
+     text-align: center;
+   }
+
+   tr:nth-child(even) {
+     background-color: #F2F2F2;
+   }
+
+   tr:hover {
+     background-color: #DDD;
+     cursor: default;
+   }
+
+   th, td {
+     padding: 10px 80px;
+     border: 1px solid #DDD;
+   }
+
+   th:first-child, td:first-child {
+     padding: 10px 25px;
+   }
+
+
+   th {
+     background-color: #85C242;
+     font-size: 18px;
+     letter-spacing: 1.2px;
+   }
+
+   td {
+     font-size: 16px;
+   }
+
+   /*------------------------------------------*/
+
+
+
+
+
+
+
+
+   /* Radio Check */
+   .radioContainer {
+     position: relative;
+     margin: 10px;
+   }
+
+   input[type=radio] {
+     display: none;
+   }
+
+   input[type=radio] + label {
+     cursor: pointer;
+     transform: scale(1.4);
+     padding: 20px;
+   }
+
+   input[type=radio]:first-child + label {
+     margin-left: 60%;
+   }
+
+   input[type=radio] + label::selection {
+     background-color: transparent;
+   }
+
+   input[type=radio] + label::before {
+     content: '';
+     display: inline-block;
+     width: 10px;
+     height: 10px;
+     border: 1px solid #463561;
+     top: 3px;
+     margin-right: 5px;
+     transition: all 5s ease animateCheckbox;
+       transform: scale(1.4);
+   }
+
+   input[type=radio]:checked + label::before {
+     content: '';
+     display: inline-block;
+     width: 10px;
+     height: 10px;
+     background-color: #463561;
+     animation: animateCheckbox 0.5s;
+       transform: scale(1.4);
+   }
+
+   @keyframes animateCheckbox {
+     0% {
+       transform: scale(0);
+     }
+     50% {
+       transform: scale(1.6);
+     }
+     100% {
+       transform: scale(1.4);
+     }
+   }
+
+   /*------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /* Modal (fondo) */
+   .modal {
+       display: none;
+       position: fixed;
+       z-index: 100;
+       left: 0;
+       top: 0;
+       width: 100%;
+       height: 100%;
+       overflow: auto;
+       background-color: rgb(0,0,0);
+       background-color: rgba(0,0,0,0.4);
+   }
+
+   /* Modal Content */
+   .modal-content {
+       position: relative;
+       background-color: #F2F2F2;
+       margin: 5% auto;
+       padding: 0;
+       border: 1px solid #888;
+       border-radius: 5px;
+       width: 80%;
+       height: 70%;
+       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+       animation-name: modalAnimation;
+       animation-duration: 0.4s
+   }
+
+   /* The Close Button */
+   .close {
+       color: #D32F2F;
+       font-size: 40px;
+       font-weight: bold;
+       position: absolute;
+       left: 97%;
+       top: 0;
+   }
+
+   .close:hover,
+   .close:focus {
+       color: #B22929;
+       text-decoration: none;
+       cursor: pointer;
+   }
+
+   /* Modal Header */
+   .modal-header {
+       padding: 30px 15px;
+       color: white;
+       border-bottom: 1px solid #bcbfd8;
+   }
+
+   /* Modal Body */
+   .modal-body {
+     padding: 2px 16px;
+   }
+
+
+
+   /* Modal Animation */
+   @keyframes modalAnimation {
+       0% {
+         opacity: 0;
+         transform: scale(0);
+       }
+       50% {
+         opacity: 0.8;
+         transform: scale(1.1);
+       }
+       100% {
+         opacity: 1;
+         transform: scale(1);
+       }
+   }
+   /*------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Footer */
+  footer #footerWrapper {
+    background-color: #2F2F2F;
+    color: #CCCCCC;
+    font-size: 14px;
+    height: 50px;
+    margin-top: 2.1%;
+  }
+
+  footer #footerWrapper span:first-child {
+    float: left;
+    margin: 15px;
+  }
+
+  footer #footerWrapper span:last-child {
+    float: right;
+    margin: 15px;
+  }
+  /*------------------------------------------*/

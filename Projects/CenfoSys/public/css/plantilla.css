@@ -1,0 +1,454 @@
+/* Inputs */
+form input {
+  width: 200px;
+  outline: none;
+  border: none;
+  border: 1px solid #BEBEBE;
+  border-radius: 2px;
+  padding: 5px;
+  margin: 0;
+  font-size: 16px;
+  color: #212529;
+  transition: all 0.2s ease;
+}
+
+form input:not(.checkbox):hover, form input:not(.checkbox):focus {
+  border: 1px solid #4285F4;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+form label {
+  position: absolute;
+  top: -18px;
+  font-size: 14px;
+  color: #212529;
+}
+
+.invalido {
+  border: 1px solid #FF1744;
+}
+
+.pHelp {
+  margin: 0 auto;
+}
+/*------------------------------------------*/
+
+/* Input checkbox */
+form input[type=checkbox] {
+  transform: scale(1.2);
+}
+/*------------------------------------------*/
+
+/* Selects */
+form select {
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  padding: 5px;
+  border: 1px solid #BEBEBE;
+  width: 212px;
+  height: 31.2px;
+  font-size: 16px;
+  color: #212529;
+  transition: all 0.2s ease;
+}
+
+form select:hover, form select:focus {
+  border: 1px solid #4285F4;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+/*------------------------------------------*/
+
+/* Text Area */
+form textarea {
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  border: 1px solid #BEBEBE;
+  padding: 5px;
+  width: 200px;
+  height: 19.2px;
+  color: #212529;
+  transition: all 0.2s ease;
+}
+
+form textarea:hover, form textarea:focus {
+  border: 1px solid #4285F4;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+/*------------------------------------------*/
+
+/* Buttons */
+form button {
+  width: 212px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background-color: #E0E0E0;
+  border: 1px solid #BEBEBE;
+  color: #212529;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: #BEBEBE;
+  border: 1px solid #4285F4;
+}
+/*------------------------------------------*/
+
+/* Form sections */
+form div {
+  display: inline-block;
+  position: relative;
+  margin: 30px 60px;
+}
+
+form {
+  text-align: left;
+}
+
+.formSection {
+  border-radius: 2px;
+  padding: 5px;
+  border: 1px solid #BEBEBE;
+  background-color: #FFF;
+  text-align: center;
+  width: 85%;
+  margin: 25px auto;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.formTitle {
+  margin-bottom: 25px;
+}
+
+.formType {
+  display: block;
+  margin: 25px 0 5px 18px;
+  color: gray;
+  font-size: 14px;
+  text-align: left;
+  cursor: default;
+}
+
+.formAction {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 18px;
+  text-align: left;
+  cursor: default;
+}
+/*------------------------------------------*/
+
+/* Tables */
+section table {
+  display: inline-block;
+  position: relative;
+  margin: 30px 60px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+table tbody, table thead {
+  /* display: block; */
+}
+
+table tbody {
+  overflow: auto;
+  height: 100px;
+}
+
+section table thead tr {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+tr:nth-child(even) {
+  background-color: #F2F6FF;
+}
+
+section table:not(#tblCursos, #tblCarreras) tbody td:nth-child(2) {
+  cursor: pointer;
+}
+
+section table tbody tr:hover {
+  background-color: #DDD;
+  cursor: default;
+}
+
+section table thead th, section table tbody td {
+  width: 300px;
+  height: 30px;
+  padding: 5px;
+}
+
+section table th {
+  color: #4285F4;
+}
+
+section table td {
+  color: #212529;
+}
+
+.botonTabla {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 2px 12px;
+  border: none;
+  outline: none;
+  display: inline-block;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.botonEditar {
+  /* color: #AB47BC; */
+  background-color: #AB47BC; */
+}
+
+.botonEditar:hover {
+  /* color: #7B1FA2; */
+  background-color: #7B1FA2; */
+}
+
+.botonActivar {
+  background-color: #26A69A;
+}
+
+.botonActivar:hover {
+  background-color: #00796B;
+}
+
+.botonDesactivar {
+  background-color: #FF1744;
+}
+
+.botonDesactivar:hover {
+  background-color: #D32F2F;
+}
+
+.botonCertificaciones {
+  background-color: #FFA726
+}
+
+.botonCertificaciones:hover {
+  background-color: #F57C00;
+}
+/*------------------------------------------*/
+
+/* Search bar */
+#topListSection {
+  position: relative;
+  display: inline;
+}
+
+.buscar {
+  width: 400px;
+  outline: none;
+  border: none;
+  border: 1px solid #BEBEBE;
+  border-radius: 2px;
+  padding: 10px 40px;
+  margin-bottom: 25px;
+  margin-top: 5px;
+  font-size: 16px;
+  color: #212529;
+  transition: all 0.2s ease;
+}
+
+.buscar:hover, .buscar:focus {
+  border: 1px solid #4285F4;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+
+
+.fa-search {
+  position: absolute;
+  top: 2px;
+  left: 10px;
+  color: #BEBEBE;
+}
+
+#topListButtons {
+  position: relative;
+  text-align: center;
+}
+
+#topListButtons button {
+  position: absolute;
+  bottom: 25px;
+  right: 100px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  width: 180px;
+  height: 41.2px;
+  border: 1px solid #BEBEBE;
+  color: #FFF;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#topListButtons:hover {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#btnDesactivados {
+  background-color: #EF5350;
+}
+
+#btnDesactivados:hover {
+  background-color: #D32F2F;
+}
+
+#btnActivados {
+  background-color: #26A69A;
+}
+
+#btnActivados:hover {
+  background-color: #00796B;
+}
+/*------------------------------------------*/
+
+/* Extra */
+.ocultar {
+  display: none;
+}
+
+.importante {
+  background-color: #EF5350;
+  border-radius: 15px;
+  padding: 2px 5px;
+  text-align: center;
+  color: #FFF !important;
+}
+/*------------------------------------------*/
+
+/* Listar */
+
+  /* Primera información*/
+  #topInformation {
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+    padding: 10px;
+    border-bottom: 1px solid #CCC;
+  }
+
+  #topInformation div {
+    display: table;
+    position: relative;
+    margin: 5px auto;
+  }
+
+  #topInformation div img {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: -22.5px;
+  }
+
+  .lblNombre {
+    font-size: 22px;
+    color: #141414;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+
+  .topInformationStyle {
+    color: gray;
+    font-size: 14px;
+    display: inline-block;
+  }
+  /*---------------------*/
+
+
+  /* Primera información*/
+  #selectInformation img {
+    display: inline-block;
+    position: absolute;
+    left: -25px;
+    width: 18px;
+    height: 18px;
+  }
+
+  #selectInformation img::selection {
+    background: transparent;
+  }
+
+  #selectInformation span {
+    position: relative;
+    margin-left: 20px;
+  }
+
+  #selectInformation span::selection {
+    background: transparent;
+  }
+
+  #selectInformation div {
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 10px 34px;
+    transition: all 0.2s ease;
+    font-size: 16px;
+    color: #212529;
+    cursor: pointer;
+  }
+
+  #selectInformation div:hover, .selectInformationActive {
+    border-bottom: 2px solid #4285F4;
+  }
+
+  .selectInformationInactive {
+    border-bottom: 2px solid #BEBEBE;
+  }
+  /*---------------------*/
+
+
+
+  /* Segunda información*/
+  #middleInformation img {
+    position: absolute;
+    left: -25px;
+    width: 18px;
+    height: 18px;
+  }
+
+  #middleInformation .firstLabel {
+    position: relative;
+    font-size: 16px;
+    color: #212529;
+  }
+
+  #middleInformation label {
+    font-size: 15px;
+    color: gray;
+  }
+
+  #middleInformation div {
+    padding: 5px 10px;
+    margin: 5px 100px;
+  }
+
+  #personalInformation, #professionalInformation {
+    overflow: auto;
+    height: 196px;
+    width: 85%;
+  }
+
+  #specificInformation {
+    overflow: auto;
+    height: 600px;
+  }
+
+  #personalInformation div, #professionalInformation div {
+    text-align: left;
+    margin-left: 27%;
+  }
+  /*---------------------*/
+/*------------------------------------------*/

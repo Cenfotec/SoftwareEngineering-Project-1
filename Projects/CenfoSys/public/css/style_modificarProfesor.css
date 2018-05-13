@@ -1,0 +1,86 @@
+/* Large input */
+#txtDireccionExacta, #txtObservaciones {
+  width: 870px;
+}
+/*------------------------------------------*/
+
+#divHorario {
+  position: relative;
+  width: 90%;
+}
+
+#divHorario2 {
+  position: absolute;
+  top: -22.5px;
+  left: 200px;
+  width: 75%;
+  height: 25%;
+  text-align: left;
+}
+
+#divHorario input {
+  width: 20px;
+  text-align: left;
+}
+
+#divHorario span {
+  margin-right: 25px;
+  border-right: 1px solid #BEBEBE;
+  padding: 5px 25px 5px 0;
+}
+
+#divHorario span:last-child {
+  border-right: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+#anadirIdioma {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 2px 12px;
+  border: none;
+  outline: none;
+  display: inline-block;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.anadirIdioma {
+  background-color: #26A69A;
+}
+
+.anadirIdioma:hover {
+  background-color: #00796B;
+}
+
+#eliminarIdioma {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 2px 12px;
+  border: none;
+  outline: none;
+  display: inline-block;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.eliminarIdioma {
+  background-color: #FF1744;
+}
+
+.eliminarIdioma:hover {
+  background-color: #D32F2F;
+}
